@@ -1,0 +1,596 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		536BF1C127E6301F00F4E28B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536BF1C027E6301F00F4E28B /* AppDelegate.swift */; };
+		536BF1C327E6301F00F4E28B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536BF1C227E6301F00F4E28B /* ContentView.swift */; };
+		536BF1C527E6301F00F4E28B /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 536BF1C427E6301F00F4E28B /* Experience.rcproject */; };
+		536BF1C727E6302200F4E28B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 536BF1C627E6302200F4E28B /* Assets.xcassets */; };
+		536BF1CA27E6302200F4E28B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 536BF1C927E6302200F4E28B /* Preview Assets.xcassets */; };
+		536BF1D427E6302200F4E28B /* AR_online_shopping_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536BF1D327E6302200F4E28B /* AR_online_shopping_iOSTests.swift */; };
+		536BF1DE27E6302200F4E28B /* AR_online_shopping_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536BF1DD27E6302200F4E28B /* AR_online_shopping_iOSUITests.swift */; };
+		536BF1E027E6302200F4E28B /* AR_online_shopping_iOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536BF1DF27E6302200F4E28B /* AR_online_shopping_iOSUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		536BF1D027E6302200F4E28B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 536BF1B527E6301F00F4E28B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 536BF1BC27E6301F00F4E28B;
+			remoteInfo = "AR-online-shopping-iOS";
+		};
+		536BF1DA27E6302200F4E28B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 536BF1B527E6301F00F4E28B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 536BF1BC27E6301F00F4E28B;
+			remoteInfo = "AR-online-shopping-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		536BF1BD27E6301F00F4E28B /* AR-online-shopping-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AR-online-shopping-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		536BF1C027E6301F00F4E28B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		536BF1C227E6301F00F4E28B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		536BF1C427E6301F00F4E28B /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
+		536BF1C627E6302200F4E28B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		536BF1C927E6302200F4E28B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		536BF1CF27E6302200F4E28B /* AR-online-shopping-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AR-online-shopping-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		536BF1D327E6302200F4E28B /* AR_online_shopping_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AR_online_shopping_iOSTests.swift; sourceTree = "<group>"; };
+		536BF1D927E6302200F4E28B /* AR-online-shopping-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AR-online-shopping-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		536BF1DD27E6302200F4E28B /* AR_online_shopping_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AR_online_shopping_iOSUITests.swift; sourceTree = "<group>"; };
+		536BF1DF27E6302200F4E28B /* AR_online_shopping_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AR_online_shopping_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		536BF1BA27E6301F00F4E28B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		536BF1CC27E6302200F4E28B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		536BF1D627E6302200F4E28B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		536BF1B427E6301F00F4E28B = {
+			isa = PBXGroup;
+			children = (
+				536BF1BF27E6301F00F4E28B /* AR-online-shopping-iOS */,
+				536BF1D227E6302200F4E28B /* AR-online-shopping-iOSTests */,
+				536BF1DC27E6302200F4E28B /* AR-online-shopping-iOSUITests */,
+				536BF1BE27E6301F00F4E28B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		536BF1BE27E6301F00F4E28B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				536BF1BD27E6301F00F4E28B /* AR-online-shopping-iOS.app */,
+				536BF1CF27E6302200F4E28B /* AR-online-shopping-iOSTests.xctest */,
+				536BF1D927E6302200F4E28B /* AR-online-shopping-iOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		536BF1BF27E6301F00F4E28B /* AR-online-shopping-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				536BF1C027E6301F00F4E28B /* AppDelegate.swift */,
+				536BF1C227E6301F00F4E28B /* ContentView.swift */,
+				536BF1C427E6301F00F4E28B /* Experience.rcproject */,
+				536BF1C627E6302200F4E28B /* Assets.xcassets */,
+				536BF1C827E6302200F4E28B /* Preview Content */,
+			);
+			path = "AR-online-shopping-iOS";
+			sourceTree = "<group>";
+		};
+		536BF1C827E6302200F4E28B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				536BF1C927E6302200F4E28B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		536BF1D227E6302200F4E28B /* AR-online-shopping-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				536BF1D327E6302200F4E28B /* AR_online_shopping_iOSTests.swift */,
+			);
+			path = "AR-online-shopping-iOSTests";
+			sourceTree = "<group>";
+		};
+		536BF1DC27E6302200F4E28B /* AR-online-shopping-iOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				536BF1DD27E6302200F4E28B /* AR_online_shopping_iOSUITests.swift */,
+				536BF1DF27E6302200F4E28B /* AR_online_shopping_iOSUITestsLaunchTests.swift */,
+			);
+			path = "AR-online-shopping-iOSUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		536BF1BC27E6301F00F4E28B /* AR-online-shopping-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 536BF1E327E6302200F4E28B /* Build configuration list for PBXNativeTarget "AR-online-shopping-iOS" */;
+			buildPhases = (
+				536BF1B927E6301F00F4E28B /* Sources */,
+				536BF1BA27E6301F00F4E28B /* Frameworks */,
+				536BF1BB27E6301F00F4E28B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AR-online-shopping-iOS";
+			productName = "AR-online-shopping-iOS";
+			productReference = 536BF1BD27E6301F00F4E28B /* AR-online-shopping-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		536BF1CE27E6302200F4E28B /* AR-online-shopping-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 536BF1E627E6302200F4E28B /* Build configuration list for PBXNativeTarget "AR-online-shopping-iOSTests" */;
+			buildPhases = (
+				536BF1CB27E6302200F4E28B /* Sources */,
+				536BF1CC27E6302200F4E28B /* Frameworks */,
+				536BF1CD27E6302200F4E28B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				536BF1D127E6302200F4E28B /* PBXTargetDependency */,
+			);
+			name = "AR-online-shopping-iOSTests";
+			productName = "AR-online-shopping-iOSTests";
+			productReference = 536BF1CF27E6302200F4E28B /* AR-online-shopping-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		536BF1D827E6302200F4E28B /* AR-online-shopping-iOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 536BF1E927E6302200F4E28B /* Build configuration list for PBXNativeTarget "AR-online-shopping-iOSUITests" */;
+			buildPhases = (
+				536BF1D527E6302200F4E28B /* Sources */,
+				536BF1D627E6302200F4E28B /* Frameworks */,
+				536BF1D727E6302200F4E28B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				536BF1DB27E6302200F4E28B /* PBXTargetDependency */,
+			);
+			name = "AR-online-shopping-iOSUITests";
+			productName = "AR-online-shopping-iOSUITests";
+			productReference = 536BF1D927E6302200F4E28B /* AR-online-shopping-iOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		536BF1B527E6301F00F4E28B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					536BF1BC27E6301F00F4E28B = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					536BF1CE27E6302200F4E28B = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 536BF1BC27E6301F00F4E28B;
+					};
+					536BF1D827E6302200F4E28B = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 536BF1BC27E6301F00F4E28B;
+					};
+				};
+			};
+			buildConfigurationList = 536BF1B827E6301F00F4E28B /* Build configuration list for PBXProject "AR-online-shopping-iOS" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 536BF1B427E6301F00F4E28B;
+			productRefGroup = 536BF1BE27E6301F00F4E28B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				536BF1BC27E6301F00F4E28B /* AR-online-shopping-iOS */,
+				536BF1CE27E6302200F4E28B /* AR-online-shopping-iOSTests */,
+				536BF1D827E6302200F4E28B /* AR-online-shopping-iOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		536BF1BB27E6301F00F4E28B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				536BF1CA27E6302200F4E28B /* Preview Assets.xcassets in Resources */,
+				536BF1C727E6302200F4E28B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		536BF1CD27E6302200F4E28B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		536BF1D727E6302200F4E28B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		536BF1B927E6301F00F4E28B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				536BF1C327E6301F00F4E28B /* ContentView.swift in Sources */,
+				536BF1C127E6301F00F4E28B /* AppDelegate.swift in Sources */,
+				536BF1C527E6301F00F4E28B /* Experience.rcproject in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		536BF1CB27E6302200F4E28B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				536BF1D427E6302200F4E28B /* AR_online_shopping_iOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		536BF1D527E6302200F4E28B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				536BF1E027E6302200F4E28B /* AR_online_shopping_iOSUITestsLaunchTests.swift in Sources */,
+				536BF1DE27E6302200F4E28B /* AR_online_shopping_iOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		536BF1D127E6302200F4E28B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 536BF1BC27E6301F00F4E28B /* AR-online-shopping-iOS */;
+			targetProxy = 536BF1D027E6302200F4E28B /* PBXContainerItemProxy */;
+		};
+		536BF1DB27E6302200F4E28B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 536BF1BC27E6301F00F4E28B /* AR-online-shopping-iOS */;
+			targetProxy = 536BF1DA27E6302200F4E28B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		536BF1E127E6302200F4E28B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		536BF1E227E6302200F4E28B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		536BF1E427E6302200F4E28B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AR-online-shopping-iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = BPYD893NRV;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ashk.AR-online-shopping-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		536BF1E527E6302200F4E28B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AR-online-shopping-iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = BPYD893NRV;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ashk.AR-online-shopping-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		536BF1E727E6302200F4E28B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BPYD893NRV;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ashk.AR-online-shopping-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AR-online-shopping-iOS.app/AR-online-shopping-iOS";
+			};
+			name = Debug;
+		};
+		536BF1E827E6302200F4E28B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BPYD893NRV;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ashk.AR-online-shopping-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AR-online-shopping-iOS.app/AR-online-shopping-iOS";
+			};
+			name = Release;
+		};
+		536BF1EA27E6302200F4E28B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BPYD893NRV;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ashk.AR-online-shopping-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "AR-online-shopping-iOS";
+			};
+			name = Debug;
+		};
+		536BF1EB27E6302200F4E28B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BPYD893NRV;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ashk.AR-online-shopping-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "AR-online-shopping-iOS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		536BF1B827E6301F00F4E28B /* Build configuration list for PBXProject "AR-online-shopping-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				536BF1E127E6302200F4E28B /* Debug */,
+				536BF1E227E6302200F4E28B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		536BF1E327E6302200F4E28B /* Build configuration list for PBXNativeTarget "AR-online-shopping-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				536BF1E427E6302200F4E28B /* Debug */,
+				536BF1E527E6302200F4E28B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		536BF1E627E6302200F4E28B /* Build configuration list for PBXNativeTarget "AR-online-shopping-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				536BF1E727E6302200F4E28B /* Debug */,
+				536BF1E827E6302200F4E28B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		536BF1E927E6302200F4E28B /* Build configuration list for PBXNativeTarget "AR-online-shopping-iOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				536BF1EA27E6302200F4E28B /* Debug */,
+				536BF1EB27E6302200F4E28B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 536BF1B527E6301F00F4E28B /* Project object */;
+}
