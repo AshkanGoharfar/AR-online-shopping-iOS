@@ -13,10 +13,10 @@ import ARKit
 
 struct ContentView : View {
     @State private var isPlacementEnabled = false
-    @State private var selectedModelImage: String?
-    @State private var modelImageConfirmedForPlacement: String?
+    @State private var selectedModelImage: Model3D?
+    @State private var modelImageConfirmedForPlacement: Model3D?
     
-    var modelImages: [String] = {
+    var modelImages: [Model3D] = {
        // Dynamically get our modelImage file name
         let fileManager = FileManager.default
         
@@ -24,10 +24,11 @@ struct ContentView : View {
                 return []
         }
         
-        var availableModelImages: [String] = []
+        var availableModelImages: [Model3D] = []
         for filename in files where filename.hasSuffix("usdz") {
             let modelImageName = filename.replacingOccurrences(of: ".usdz", with: "")
-            availableModelImages.append(modelImageName)
+            let model3D = Model3D(model3DName: modelImageName)
+            availableModelImages.append(model3D)
         }
         
         return availableModelImages
@@ -52,7 +53,7 @@ struct ContentView : View {
     
 
 struct ARViewContainer: UIViewRepresentable {
-    @Binding var modelImageConfirmedForPlacement: String?
+    @Binding var modelImageConfirmedForPlacement: Model3D?
     
     func makeUIView(context: Context) -> ARView {
         
@@ -79,18 +80,22 @@ struct ARViewContainer: UIViewRepresentable {
     
     func updateUIView(_ uiView: ARView, context: Context) {
         // we do not use $ here because we are just reading the value
-        if let modelImageName = self.modelImageConfirmedForPlacement {
+        if let model3D = self.modelImageConfirmedForPlacement {
             
-            print("DEBUG: adding model image to scene - \(modelImageName)")
-            
-            let filename = modelImageName + ".usdz"
-            let modelImageEntity = try! ModelEntity.loadModel(named: filename)
-            
-            let anchorEntity = AnchorEntity(plane: .any)
-            anchorEntity.addChild(modelImageEntity)
-            
-            uiView.scene.addAnchor(anchorEntity)
-            
+            if let model3DEntity = model3D.model3DEntity {
+                print("DEBUG: adding model to scene - \(model3D.model3DName)")
+                
+                let anchorEntity = AnchorEntity(plane: .any)
+                
+                anchorEntity.addChild(model3DEntity)
+                anchorEntity.addChild(model3DEntity.clone(recursive: true))
+                
+                uiView.scene.addAnchor(anchorEntity)
+                
+            } else {
+                print("DEBUG: Unable to load model3DEntity for \(model3D.model3DName)")
+            }
+
             
             
             /* If we assign the value to variable here is gonna make error, because we are assigning it inside the same variable and the UI is stil processing the variable.
@@ -106,22 +111,22 @@ struct ARViewContainer: UIViewRepresentable {
 
 struct ModelPickerView: View {
     @Binding var isPlacementEnabled: Bool
-    @Binding var selectedModelImage: String?
+    @Binding var selectedModelImage: Model3D?
     
-    var modelImages: [String]
+    var modelImages: [Model3D]
     
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(spacing: 30) {
                 ForEach(0 ..< self.modelImages.count) { index in
                     Button(action: {
-                        print("DEBUG: selected model with name: \(self.modelImages[index])")
+                        print("DEBUG: selected model with name: \(self.modelImages[index].model3DName)")
                         
                         self.selectedModelImage = self.modelImages[index]
                         
                         self.isPlacementEnabled = true
                     }) {
-                        Image(uiImage: UIImage(named: self.modelImages[index])!)
+                        Image(uiImage: self.modelImages[index].image)
                             .resizable()
                             .frame(height: 80)
                             .aspectRatio(1/1, contentMode: .fit)
@@ -139,8 +144,8 @@ struct ModelPickerView: View {
 
 struct PlacementButtonsView: View {
     @Binding var isPlacementEnabled: Bool
-    @Binding var selectedModelImage: String?
-    @Binding var modelImageConfirmedForPlacement: String?
+    @Binding var selectedModelImage: Model3D?
+    @Binding var modelImageConfirmedForPlacement: Model3D?
     
     var body: some View {
         HStack {

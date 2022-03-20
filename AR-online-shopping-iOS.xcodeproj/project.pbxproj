@@ -18,6 +18,7 @@
 		536BF1F227E6390600F4E28B /* chair_swan.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 536BF1EE27E6390600F4E28B /* chair_swan.usdz */; };
 		536BF1F327E6390600F4E28B /* gramophone.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 536BF1EF27E6390600F4E28B /* gramophone.usdz */; };
 		536BF1F427E6390600F4E28B /* teapot.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 536BF1F027E6390600F4E28B /* teapot.usdz */; };
+		53C281A227E7987B00163FEB /* Model3D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C281A127E7987B00163FEB /* Model3D.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		536BF1EE27E6390600F4E28B /* chair_swan.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = chair_swan.usdz; sourceTree = "<group>"; };
 		536BF1EF27E6390600F4E28B /* gramophone.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = gramophone.usdz; sourceTree = "<group>"; };
 		536BF1F027E6390600F4E28B /* teapot.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = teapot.usdz; sourceTree = "<group>"; };
+		53C281A127E7987B00163FEB /* Model3D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model3D.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				536BF1C227E6301F00F4E28B /* ContentView.swift */,
 				536BF1C627E6302200F4E28B /* Assets.xcassets */,
 				536BF1C827E6302200F4E28B /* Preview Content */,
+				53C281A127E7987B00163FEB /* Model3D.swift */,
 			);
 			path = "AR-online-shopping-iOS";
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 			files = (
 				536BF1C327E6301F00F4E28B /* ContentView.swift in Sources */,
 				536BF1C127E6301F00F4E28B /* AppDelegate.swift in Sources */,
+				53C281A227E7987B00163FEB /* Model3D.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
