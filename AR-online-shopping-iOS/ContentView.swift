@@ -11,6 +11,9 @@ import RealityKit
 // This library is added, to allow user to add AR objects in the physical space
 import ARKit
 
+// This library is added, to improve AR object placement UX
+import FocusEntity
+
 struct ContentView : View {
     @State private var isPlacementEnabled = false
     @State private var selectedModelImage: Model3D?
@@ -55,31 +58,11 @@ struct ContentView : View {
 struct ARViewContainer: UIViewRepresentable {
     @Binding var modelImageConfirmedForPlacement: Model3D?
     
-    func makeUIView(context: Context) -> ARView {
-        
-        let arView = ARView(frame: .zero)
-        
-        let config = ARWorldTrackingConfiguration()
-        
-        // Enable plane tracking
-        config.planeDetection = [.horizontal, .vertical]
-
-        // Enable environment textureing
-        config.environmentTexturing = .automatic
-        
-        // If we have a device that has light our scene reconstruction capabilities
-        if ARWorldTrackingConfiguration.supportsSceneReconstruction(.mesh) {
-            config.sceneReconstruction = .mesh
-        }
-        
-        arView.session.run(config)
-        
-        return arView
-        
+    func makeUIView(context: Context) -> FocusARView {
+      FocusARView(frame: .zero)
     }
-    
-    func updateUIView(_ uiView: ARView, context: Context) {
-        // we do not use $ here because we are just reading the value
+
+    func updateUIView(_ uiView: FocusARView, context: Context) {
         if let model3D = self.modelImageConfirmedForPlacement {
             
             if let model3DEntity = model3D.model3DEntity {
@@ -104,9 +87,9 @@ struct ARViewContainer: UIViewRepresentable {
             DispatchQueue.main.async {
                 self.modelImageConfirmedForPlacement = nil
             }
-        }
+
     }
-    
+    }
 }
 
 struct ModelPickerView: View {

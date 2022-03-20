@@ -19,6 +19,8 @@
 		536BF1F327E6390600F4E28B /* gramophone.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 536BF1EF27E6390600F4E28B /* gramophone.usdz */; };
 		536BF1F427E6390600F4E28B /* teapot.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 536BF1F027E6390600F4E28B /* teapot.usdz */; };
 		53C281A227E7987B00163FEB /* Model3D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C281A127E7987B00163FEB /* Model3D.swift */; };
+		53C5131D27E7B5C60011930A /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = 53C5131C27E7B5C60011930A /* FocusEntity */; };
+		53C5131F27E7BC6F0011930A /* FocusARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C5131E27E7BC6F0011930A /* FocusARView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,7 @@
 		536BF1EF27E6390600F4E28B /* gramophone.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = gramophone.usdz; sourceTree = "<group>"; };
 		536BF1F027E6390600F4E28B /* teapot.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = teapot.usdz; sourceTree = "<group>"; };
 		53C281A127E7987B00163FEB /* Model3D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model3D.swift; sourceTree = "<group>"; };
+		53C5131E27E7BC6F0011930A /* FocusARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusARView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53C5131D27E7B5C60011930A /* FocusEntity in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +114,7 @@
 				536BF1C627E6302200F4E28B /* Assets.xcassets */,
 				536BF1C827E6302200F4E28B /* Preview Content */,
 				53C281A127E7987B00163FEB /* Model3D.swift */,
+				53C5131E27E7BC6F0011930A /* FocusARView.swift */,
 			);
 			path = "AR-online-shopping-iOS";
 			sourceTree = "<group>";
@@ -166,6 +171,9 @@
 			dependencies = (
 			);
 			name = "AR-online-shopping-iOS";
+			packageProductDependencies = (
+				53C5131C27E7B5C60011930A /* FocusEntity */,
+			);
 			productName = "AR-online-shopping-iOS";
 			productReference = 536BF1BD27E6301F00F4E28B /* AR-online-shopping-iOS.app */;
 			productType = "com.apple.product-type.application";
@@ -238,6 +246,9 @@
 				Base,
 			);
 			mainGroup = 536BF1B427E6301F00F4E28B;
+			packageReferences = (
+				53C5131B27E7B5C60011930A /* XCRemoteSwiftPackageReference "FocusEntity" */,
+			);
 			productRefGroup = 536BF1BE27E6301F00F4E28B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -286,6 +297,7 @@
 			files = (
 				536BF1C327E6301F00F4E28B /* ContentView.swift in Sources */,
 				536BF1C127E6301F00F4E28B /* AppDelegate.swift in Sources */,
+				53C5131F27E7BC6F0011930A /* FocusARView.swift in Sources */,
 				53C281A227E7987B00163FEB /* Model3D.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -615,6 +627,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		53C5131B27E7B5C60011930A /* XCRemoteSwiftPackageReference "FocusEntity" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/maxxfrazer/FocusEntity";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		53C5131C27E7B5C60011930A /* FocusEntity */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 53C5131B27E7B5C60011930A /* XCRemoteSwiftPackageReference "FocusEntity" */;
+			productName = FocusEntity;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 536BF1B527E6301F00F4E28B /* Project object */;
 }
