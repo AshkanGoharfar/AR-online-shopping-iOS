@@ -8,6 +8,9 @@
 import SwiftUI
 import RealityKit
 
+// This library is added, to allow user to add AR objects in the physical space
+import ARKit
+
 struct ContentView : View {
     @State private var isPlacementEnabled = false
     @State private var selectedModelImage: String?
@@ -55,6 +58,20 @@ struct ARViewContainer: UIViewRepresentable {
         
         let arView = ARView(frame: .zero)
         
+        let config = ARWorldTrackingConfiguration()
+        
+        // Enable plane tracking
+        config.planeDetection = [.horizontal, .vertical]
+
+        // Enable environment textureing
+        config.environmentTexturing = .automatic
+        
+        // If we have a device that has light our scene reconstruction capabilities
+        if ARWorldTrackingConfiguration.supportsSceneReconstruction(.mesh) {
+            config.sceneReconstruction = .mesh
+        }
+        
+        arView.session.run(config)
         
         return arView
         
@@ -65,6 +82,16 @@ struct ARViewContainer: UIViewRepresentable {
         if let modelImageName = self.modelImageConfirmedForPlacement {
             
             print("DEBUG: adding model image to scene - \(modelImageName)")
+            
+            let filename = modelImageName + ".usdz"
+            let modelImageEntity = try! ModelEntity.loadModel(named: filename)
+            
+            let anchorEntity = AnchorEntity(plane: .any)
+            anchorEntity.addChild(modelImageEntity)
+            
+            uiView.scene.addAnchor(anchorEntity)
+            
+            
             
             /* If we assign the value to variable here is gonna make error, because we are assigning it inside the same variable and the UI is stil processing the variable.
              So we have to wrap the variable to dispach queue to asychronoous block.*/
