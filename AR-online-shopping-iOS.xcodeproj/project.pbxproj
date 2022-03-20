@@ -9,12 +9,15 @@
 /* Begin PBXBuildFile section */
 		536BF1C127E6301F00F4E28B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536BF1C027E6301F00F4E28B /* AppDelegate.swift */; };
 		536BF1C327E6301F00F4E28B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536BF1C227E6301F00F4E28B /* ContentView.swift */; };
-		536BF1C527E6301F00F4E28B /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 536BF1C427E6301F00F4E28B /* Experience.rcproject */; };
 		536BF1C727E6302200F4E28B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 536BF1C627E6302200F4E28B /* Assets.xcassets */; };
 		536BF1CA27E6302200F4E28B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 536BF1C927E6302200F4E28B /* Preview Assets.xcassets */; };
 		536BF1D427E6302200F4E28B /* AR_online_shopping_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536BF1D327E6302200F4E28B /* AR_online_shopping_iOSTests.swift */; };
 		536BF1DE27E6302200F4E28B /* AR_online_shopping_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536BF1DD27E6302200F4E28B /* AR_online_shopping_iOSUITests.swift */; };
 		536BF1E027E6302200F4E28B /* AR_online_shopping_iOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536BF1DF27E6302200F4E28B /* AR_online_shopping_iOSUITestsLaunchTests.swift */; };
+		536BF1F127E6390600F4E28B /* cup_saucer_set.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 536BF1ED27E6390600F4E28B /* cup_saucer_set.usdz */; };
+		536BF1F227E6390600F4E28B /* chair_swan.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 536BF1EE27E6390600F4E28B /* chair_swan.usdz */; };
+		536BF1F327E6390600F4E28B /* gramophone.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 536BF1EF27E6390600F4E28B /* gramophone.usdz */; };
+		536BF1F427E6390600F4E28B /* teapot.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 536BF1F027E6390600F4E28B /* teapot.usdz */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +41,6 @@
 		536BF1BD27E6301F00F4E28B /* AR-online-shopping-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AR-online-shopping-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		536BF1C027E6301F00F4E28B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		536BF1C227E6301F00F4E28B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		536BF1C427E6301F00F4E28B /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
 		536BF1C627E6302200F4E28B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		536BF1C927E6302200F4E28B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		536BF1CF27E6302200F4E28B /* AR-online-shopping-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AR-online-shopping-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +48,10 @@
 		536BF1D927E6302200F4E28B /* AR-online-shopping-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AR-online-shopping-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		536BF1DD27E6302200F4E28B /* AR_online_shopping_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AR_online_shopping_iOSUITests.swift; sourceTree = "<group>"; };
 		536BF1DF27E6302200F4E28B /* AR_online_shopping_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AR_online_shopping_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		536BF1ED27E6390600F4E28B /* cup_saucer_set.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = cup_saucer_set.usdz; sourceTree = "<group>"; };
+		536BF1EE27E6390600F4E28B /* chair_swan.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = chair_swan.usdz; sourceTree = "<group>"; };
+		536BF1EF27E6390600F4E28B /* gramophone.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = gramophone.usdz; sourceTree = "<group>"; };
+		536BF1F027E6390600F4E28B /* teapot.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = teapot.usdz; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,9 +102,9 @@
 		536BF1BF27E6301F00F4E28B /* AR-online-shopping-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				536BF1EC27E6388200F4E28B /* Model-Images */,
 				536BF1C027E6301F00F4E28B /* AppDelegate.swift */,
 				536BF1C227E6301F00F4E28B /* ContentView.swift */,
-				536BF1C427E6301F00F4E28B /* Experience.rcproject */,
 				536BF1C627E6302200F4E28B /* Assets.xcassets */,
 				536BF1C827E6302200F4E28B /* Preview Content */,
 			);
@@ -128,6 +134,17 @@
 				536BF1DF27E6302200F4E28B /* AR_online_shopping_iOSUITestsLaunchTests.swift */,
 			);
 			path = "AR-online-shopping-iOSUITests";
+			sourceTree = "<group>";
+		};
+		536BF1EC27E6388200F4E28B /* Model-Images */ = {
+			isa = PBXGroup;
+			children = (
+				536BF1EE27E6390600F4E28B /* chair_swan.usdz */,
+				536BF1ED27E6390600F4E28B /* cup_saucer_set.usdz */,
+				536BF1EF27E6390600F4E28B /* gramophone.usdz */,
+				536BF1F027E6390600F4E28B /* teapot.usdz */,
+			);
+			path = "Model-Images";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,8 +251,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				536BF1F427E6390600F4E28B /* teapot.usdz in Resources */,
 				536BF1CA27E6302200F4E28B /* Preview Assets.xcassets in Resources */,
 				536BF1C727E6302200F4E28B /* Assets.xcassets in Resources */,
+				536BF1F227E6390600F4E28B /* chair_swan.usdz in Resources */,
+				536BF1F127E6390600F4E28B /* cup_saucer_set.usdz in Resources */,
+				536BF1F327E6390600F4E28B /* gramophone.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,7 +283,6 @@
 			files = (
 				536BF1C327E6301F00F4E28B /* ContentView.swift in Sources */,
 				536BF1C127E6301F00F4E28B /* AppDelegate.swift in Sources */,
-				536BF1C527E6301F00F4E28B /* Experience.rcproject in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
