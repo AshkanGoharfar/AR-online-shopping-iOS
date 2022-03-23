@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5335925027EA45080046851F /* ARViewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5335924F27EA45080046851F /* ARViewScreen.swift */; };
+		5335925227EA4B760046851F /* ShopHomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5335925127EA4B760046851F /* ShopHomeScreen.swift */; };
+		5335925627EA55A70046851F /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5335925527EA55A70046851F /* Product.swift */; };
+		5335925927EA56F80046851F /* ProductCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5335925827EA56F80046851F /* ProductCard.swift */; };
+		5335925C27EA5BE10046851F /* CartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5335925B27EA5BE00046851F /* CartButton.swift */; };
+		5335925E27EA5DA70046851F /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5335925D27EA5DA70046851F /* CartView.swift */; };
+		5335926027EA5F6B0046851F /* CartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5335925F27EA5F6B0046851F /* CartManager.swift */; };
+		5335926227EA62110046851F /* ProductRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5335926127EA62110046851F /* ProductRow.swift */; };
 		536BF1C127E6301F00F4E28B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536BF1C027E6301F00F4E28B /* AppDelegate.swift */; };
 		536BF1C327E6301F00F4E28B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536BF1C227E6301F00F4E28B /* ContentView.swift */; };
 		536BF1C727E6302200F4E28B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 536BF1C627E6302200F4E28B /* Assets.xcassets */; };
@@ -41,6 +49,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5335924F27EA45080046851F /* ARViewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewScreen.swift; sourceTree = "<group>"; };
+		5335925127EA4B760046851F /* ShopHomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopHomeScreen.swift; sourceTree = "<group>"; };
+		5335925527EA55A70046851F /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		5335925827EA56F80046851F /* ProductCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCard.swift; sourceTree = "<group>"; };
+		5335925B27EA5BE00046851F /* CartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartButton.swift; sourceTree = "<group>"; };
+		5335925D27EA5DA70046851F /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
+		5335925F27EA5F6B0046851F /* CartManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartManager.swift; sourceTree = "<group>"; };
+		5335926127EA62110046851F /* ProductRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRow.swift; sourceTree = "<group>"; };
 		536BF1BD27E6301F00F4E28B /* AR-online-shopping-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AR-online-shopping-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		536BF1C027E6301F00F4E28B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		536BF1C227E6301F00F4E28B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -85,6 +101,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5335925427EA557E0046851F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5335925527EA55A70046851F /* Product.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5335925727EA56CE0046851F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				5335925827EA56F80046851F /* ProductCard.swift */,
+				5335925B27EA5BE00046851F /* CartButton.swift */,
+				5335926127EA62110046851F /* ProductRow.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		5335925A27EA59DF0046851F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5335925127EA4B760046851F /* ShopHomeScreen.swift */,
+				5335925D27EA5DA70046851F /* CartView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		536BF1B427E6301F00F4E28B = {
 			isa = PBXGroup;
 			children = (
@@ -108,13 +151,18 @@
 		536BF1BF27E6301F00F4E28B /* AR-online-shopping-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				536BF1C227E6301F00F4E28B /* ContentView.swift */,
+				5335925A27EA59DF0046851F /* Views */,
+				5335925727EA56CE0046851F /* Components */,
+				5335925427EA557E0046851F /* Models */,
 				536BF1EC27E6388200F4E28B /* Model-Images */,
 				536BF1C027E6301F00F4E28B /* AppDelegate.swift */,
-				536BF1C227E6301F00F4E28B /* ContentView.swift */,
 				536BF1C627E6302200F4E28B /* Assets.xcassets */,
 				536BF1C827E6302200F4E28B /* Preview Content */,
 				53C281A127E7987B00163FEB /* Model3D.swift */,
 				53C5131E27E7BC6F0011930A /* FocusARView.swift */,
+				5335924F27EA45080046851F /* ARViewScreen.swift */,
+				5335925F27EA5F6B0046851F /* CartManager.swift */,
 			);
 			path = "AR-online-shopping-iOS";
 			sourceTree = "<group>";
@@ -295,10 +343,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5335925E27EA5DA70046851F /* CartView.swift in Sources */,
 				536BF1C327E6301F00F4E28B /* ContentView.swift in Sources */,
+				5335925027EA45080046851F /* ARViewScreen.swift in Sources */,
+				5335926027EA5F6B0046851F /* CartManager.swift in Sources */,
 				536BF1C127E6301F00F4E28B /* AppDelegate.swift in Sources */,
 				53C5131F27E7BC6F0011930A /* FocusARView.swift in Sources */,
+				5335925227EA4B760046851F /* ShopHomeScreen.swift in Sources */,
+				5335925C27EA5BE10046851F /* CartButton.swift in Sources */,
+				5335926227EA62110046851F /* ProductRow.swift in Sources */,
 				53C281A227E7987B00163FEB /* Model3D.swift in Sources */,
+				5335925627EA55A70046851F /* Product.swift in Sources */,
+				5335925927EA56F80046851F /* ProductCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
