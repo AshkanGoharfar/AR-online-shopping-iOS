@@ -15,7 +15,18 @@ struct CartView: View {
                 ForEach(cartManager.products, id: \.id) { product in
                     ProductRow(product: product)
                 }
-                
+//                VStack{
+//                NavigationView {
+//                        NavigationLink(destination: ARViewScreen()){
+//                            Text("See Products in Your Home")
+//                                .foregroundColor(Color(.white))
+//                                .padding(12)
+//                        }
+//                        .background(Color.orange)
+//                        .cornerRadius(12)
+//                        .navigationBarTitle(Text("Products"))
+//                }
+//                }
                 HStack {
                     Text("Your Card Total is")
                     Spacer()
@@ -23,6 +34,18 @@ struct CartView: View {
                         .bold()
                 }
                 .padding()
+                
+                Spacer()
+                Spacer()
+                Button {
+                    print("Comming Soon")
+                } label: {
+                    Text("Apple Pay Comming Soon")
+                }
+                .frame(width: 300, height: 40)
+                .foregroundColor(.black)
+                .background(.orange)
+                .cornerRadius(15)
             } else {
                 Text("Your cart is empty")
             }

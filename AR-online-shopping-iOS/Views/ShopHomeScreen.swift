@@ -13,6 +13,7 @@ struct ShopHomeScreen: View {
     var columns = [GridItem(.adaptive(minimum: 160), spacing: 20)]
     
     var body: some View {
+        
         NavigationView {
             ScrollView {
                 LazyVGrid(columns: columns, spacing: 20) {
@@ -23,7 +24,11 @@ struct ShopHomeScreen: View {
                 }
                 .padding()
             }
-            .navigationTitle(Text("Ashkan Shop"))
+            .navigationTitle(Text("Smart Online Shopping")
+                .foregroundColor(Color(UIColor(red: 23/255.0,
+                                               green: 120/255.0,
+                                               blue: 242/255.0,
+                                               alpha: 1))))
             .toolbar {
                 NavigationLink {
                     CartView()
