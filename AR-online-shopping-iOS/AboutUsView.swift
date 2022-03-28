@@ -7,6 +7,7 @@
 
 import SwiftUI
 import MessageUI
+import FirebaseAuth
 
 /// Main View
 struct AboutUsView: View {
@@ -17,9 +18,31 @@ struct AboutUsView: View {
     /// The delegate required by `MFMessageComposeViewController`
     private let messageComposeDelegate = MessageDelegate()
 
+    
+    @EnvironmentObject var viewModel: AppViewModel
+    
+    let auth = Auth.auth()
+    
+    func signOut() {
+        try? auth.signOut()
+        
+        viewModel.signedIn = false
+    }
 
     var body: some View {
         ScrollView{
+            VStack {
+                Button(action: {
+                    viewModel.signOut()
+                }, label: {
+                    Text("Sign Out")
+                        .frame(width: 200, height: 50)
+                        .background(Color.green)
+                        .foregroundColor(Color.blue)
+                        .padding()
+                })
+            }
+
             ZStack{
         VStack {
         

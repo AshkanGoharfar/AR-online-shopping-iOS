@@ -7,12 +7,14 @@
 
 import UIKit
 import SwiftUI
+import Firebase
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+//    @StateObject var viewModel = AppViewModel()
+//    environmentObject(_: AppViewModel)
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
@@ -24,6 +26,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window.rootViewController = UIHostingController(rootView: contentView)
         self.window = window
         window.makeKeyAndVisible()
+        
+        
+        FirebaseApp.configure()
+        
         return true
     }
 
