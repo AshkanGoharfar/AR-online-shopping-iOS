@@ -40,7 +40,7 @@ struct CartView: View {
                 Button {
                     print("Comming Soon")
                 } label: {
-                    Text("Apple Pay Comming Soon")
+                    Text("Apple Pay")
                 }
                 .frame(width: 300, height: 40)
                 .foregroundColor(.black)
