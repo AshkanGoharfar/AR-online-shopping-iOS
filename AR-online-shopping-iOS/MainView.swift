@@ -21,6 +21,10 @@ struct MainView: View {
                 .tabItem {
                     Label("Products", systemImage: "bag.fill")
                 }
+            NewPostView()
+                .tabItem {
+                    Label("Post", systemImage: "plus.square.fill")
+                }
             ARViewScreen()
                 .tabItem {
                     Label("Reality", systemImage: "cube")

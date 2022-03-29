@@ -23,10 +23,22 @@ struct ContentView: View {
     var body: some View {
         UserAuthentication()
           .environmentObject(AppViewModel())
+        
+          // Fixed rotation bug after implementing user authentiaction
+          .phoneOnlyStackNavigationView()
     }
 }
 
-
+// Fixed rotation bug after implementing user authentiaction
+extension View {
+    func phoneOnlyStackNavigationView() -> some View {
+        if UIDevice.current.userInterfaceIdiom == .phone {
+            return AnyView(self.navigationViewStyle(StackNavigationViewStyle()))
+        } else {
+            return AnyView(self)
+        }
+    }
+}
 
 struct Content_Previews: PreviewProvider  {
     

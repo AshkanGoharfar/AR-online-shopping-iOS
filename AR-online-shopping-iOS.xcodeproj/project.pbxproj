@@ -24,6 +24,7 @@
 		534562B627F1FE5C008E1B5E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 534562B527F1FE5C008E1B5E /* GoogleService-Info.plist */; };
 		534562B927F1FE7E008E1B5E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534562B827F1FE7E008E1B5E /* MainView.swift */; };
 		534562BB27F222BB008E1B5E /* UserAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534562BA27F222BB008E1B5E /* UserAuthentication.swift */; };
+		5346BC4E27F38D94003D716F /* NewPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5346BC4D27F38D94003D716F /* NewPostView.swift */; };
 		536BF1C127E6301F00F4E28B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536BF1C027E6301F00F4E28B /* AppDelegate.swift */; };
 		536BF1C327E6301F00F4E28B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536BF1C227E6301F00F4E28B /* ContentView.swift */; };
 		536BF1C727E6302200F4E28B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 536BF1C627E6302200F4E28B /* Assets.xcassets */; };
@@ -78,6 +79,7 @@
 		534562B527F1FE5C008E1B5E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		534562B827F1FE7E008E1B5E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		534562BA27F222BB008E1B5E /* UserAuthentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthentication.swift; sourceTree = "<group>"; };
+		5346BC4D27F38D94003D716F /* NewPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostView.swift; sourceTree = "<group>"; };
 		536BF1BD27E6301F00F4E28B /* AR-online-shopping-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AR-online-shopping-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		536BF1C027E6301F00F4E28B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		536BF1C227E6301F00F4E28B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -209,6 +211,7 @@
 				534162D527EB9E3D0045338C /* AboutUsView.swift */,
 				534562B827F1FE7E008E1B5E /* MainView.swift */,
 				534562BA27F222BB008E1B5E /* UserAuthentication.swift */,
+				5346BC4D27F38D94003D716F /* NewPostView.swift */,
 			);
 			path = "AR-online-shopping-iOS";
 			sourceTree = "<group>";
@@ -522,6 +525,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5335925E27EA5DA70046851F /* CartView.swift in Sources */,
+				5346BC4E27F38D94003D716F /* NewPostView.swift in Sources */,
 				536BF1C327E6301F00F4E28B /* ContentView.swift in Sources */,
 				5335925027EA45080046851F /* ARViewScreen.swift in Sources */,
 				5335926027EA5F6B0046851F /* CartManager.swift in Sources */,
