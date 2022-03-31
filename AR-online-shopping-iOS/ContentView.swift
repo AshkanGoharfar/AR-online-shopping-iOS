@@ -24,12 +24,12 @@ struct ContentView: View {
         UserAuthentication()
           .environmentObject(AppViewModel())
         
-          // Fixed rotation bug after implementing user authentiaction
+          // Fixed rotation bug after implementing user authentication
           .phoneOnlyStackNavigationView()
     }
 }
 
-// Fixed rotation bug after implementing user authentiaction
+// Fixed rotation bug after implementing user authentication
 extension View {
     func phoneOnlyStackNavigationView() -> some View {
         if UIDevice.current.userInterfaceIdiom == .phone {
