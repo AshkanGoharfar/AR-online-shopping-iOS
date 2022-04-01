@@ -7,24 +7,30 @@
 
 import Foundation
 import SwiftUI
+import FirebaseStorage
+import SDWebImageSwiftUI
 
-// Ashkbook post view
+
+// Post view
 struct PostView: View  {
     
     @State var isLiked: Bool = false
     
-    let model: AshkbookPostModel
+    @State private var imageURL = URL(string: "")
+
+    let model: NewPostModel
     
     var body: some View {
         VStack {
             
             // Profile picture and name
             HStack {
-                Image(model.imageName)
-                    .resizable()
+                WebImage(url: URL(string: model.imageName))
+                     .resizable()
+                     .aspectRatio(contentMode: .fit)
                     .frame(width: 50, height: 50, alignment: .center)
-                    .aspectRatio(contentMode: .fill)
                     .cornerRadius(50/2)
+
                 
                 VStack {
                     HStack {
@@ -34,11 +40,11 @@ struct PostView: View  {
                         Spacer()
                     }
                     
-                    HStack {
-                        Text("14 minutes ago")
-                            .foregroundColor(Color(.secondaryLabel))
-                        Spacer()
-                    }
+//                    HStack {
+//                        Text("14 minutes ago")
+//                            .foregroundColor(Color(.secondaryLabel))
+//                        Spacer()
+//                    }
 
                 }
                 Spacer()
@@ -56,33 +62,60 @@ struct PostView: View  {
             Spacer()
             
             // Comment like share button
-            HStack {
-                Button(action: {
-                    isLiked.toggle()
-                }, label: {
-                    Text(isLiked ? "Liked" : "Like")
-                })
-                
-                Spacer()
-                Button(action: {
-                    
-                }, label: {
-                    Text("Comment")
-                })
-                
-                Spacer()
-                Button(action: {
-                    
-                }, label: {
-                    Text("Share")
-                })
-                
-            }
-            .padding()
+//            HStack {
+//                Button(action: {
+//                    isLiked.toggle()
+//                }, label: {
+//                    Text(isLiked ? "Liked" : "Like")
+//                })
+//
+//                Spacer()
+//                Button(action: {
+//
+//                }, label: {
+//                    Text("Comment")
+//                })
+//
+//                Spacer()
+//                Button(action: {
+//
+//                }, label: {
+//                    Text("Share")
+//                })
+//
+//            }
+//            .padding()
         }
         .padding()
         .background(Color(.systemBackground))
         .cornerRadius(7)
     }
+    
+    func loadImageFromFirebase() {
+        
+        // Create a reference with an initial file path and name
+        let storage = Storage.storage()
+        let storageRef = storage.reference()
+        
+        // Create a reference to the file you want to download
+        let starsRef = storageRef.child("abcd")
+//
+//         let storage = Storage.storage().reference(withPath: "abcd")
+        starsRef.downloadURL { (url, error) in
+             if error != nil {
+                 print((error?.localizedDescription)!)
+                 return
+         }
+         print("dasdasd")
+         print(url)
+         self.imageURL = url!
+            
+     }
+    }
+    
+//    init() {
+//        newPostService.getData()
+//    }
+
 }
 

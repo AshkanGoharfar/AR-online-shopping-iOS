@@ -9,61 +9,50 @@ import Foundation
 
 import SwiftUI
 
+import FirebaseStorage
+import SDWebImageSwiftUI
+
+import FirebaseAuth
+
+
 struct NewPostView: View {
     
-    @State private var postImage: Image?
-    @State private var pickedImage: Image?
-    @State private var showingActionSheet = false
-    @State private var showingImagePicker = false
-    @State private var imageData: Data = Data()
-    @State private var sourceType: UIImagePickerController.SourceType = .photoLibrary
-    @State private var error: String = ""
-    @State private var showingAlert = false
-    @State private var alertTitle: String = "Oh no "
+    @EnvironmentObject var viewModel: AppViewModel
+    
+    @ObservedObject var model = NewPostService()
+    
+    @State private var imageURL = URL(string: "")
+
     @State private var text = ""
     
-    func loadImage() {
-        guard let inputImage = pickedImage else {return}
-        
-        postImage = inputImage
-    }
+    @Environment(\.editMode) private var editMode
     
-    func clear() {
-        self.text = ""
-        self.imageData = Data()
-        self.postImage = Image(systemName: "person.circle.fill")
-    }
+    @State private var disableTextField = true
+
+    @State private var wordCount: Int = 0
     
-    func errorCheck() -> String? {
-        if text.trimmingCharacters(in: .whitespaces).isEmpty ||
-            imageData.isEmpty {
-            return "Please add a caption and provide an image "
-        }
-        return nil
-    }
+    @FocusState private var nameIsFocused: Bool
     
     var body: some View {
         VStack {
             Text("Upload a post about what you purchased").font(.largeTitle)
-            
-//            VStack {
-//                if postImage != nil {
-//                    postImage!.resizable()
-//                        .frame(width: 300, height: 200)
-//                        .onTapGesture {
-//                            self.showingActionSheet = true
-//                        }
-//                }
-//            }
-            
+  
             TextEditor(text: $text)
+                .lineSpacing(4)
                 .frame(height: 200)
                 .padding(4)
-                .background(RoundedRectangle(cornerRadius: 8).stroke(Color.black))
+                .background(RoundedRectangle(cornerRadius: 8).stroke(Color.orange))
                 .padding(.horizontal)
-            
+                .disableAutocorrection(true)
+                .multilineTextAlignment(.leading)
+                .focused($nameIsFocused)
+                .padding()
+
             Button {
-                print("Comming Soon")
+                let email = Auth.auth().currentUser?.email
+                addNewPost(email: email!)
+
+
             } label: {
                 Text("Upload Post")
             }
@@ -71,11 +60,33 @@ struct NewPostView: View {
             .foregroundColor(.black)
             .background(.orange)
             .cornerRadius(15)
+
+            
+
+            Spacer()
         }
         .padding()
-        
-//        .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
-//            ImagePi
-//        }
+    }
+    
+    func addNewPost(email: String){
+
+        // Create a reference with an initial file path and name
+        let storage = Storage.storage()
+        let storageRef = storage.reference()
+
+        // Create a reference to the file you want to download
+        let starsRef = storageRef.child(email)
+        Storage.storage().reference().child(email).downloadURL { (url, error) in
+             if error != nil {
+                 print("ninininninininini")
+                 print((error?.localizedDescription)!)
+                 return
+            }
+            print("dasdasd")
+            print(url)
+            model.addData(name: email, notes: text, imageName: url?.absoluteString ?? "")
+            text = ""
+            nameIsFocused = false
+        }
     }
 }

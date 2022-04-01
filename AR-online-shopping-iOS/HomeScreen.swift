@@ -5,9 +5,12 @@
 // This project aims to implement an iOS application using Suift UI. This application is performing like facebook app, in which the proposed app has search bar, stories,and posts.
 
 import SwiftUI
+import FirebaseStorage
+import SDWebImageSwiftUI
+
 
 // Convert variable to hashable, because whenever a for loop executes it needs to be able to specify an unique id for the actual elementa\ and when you make something hashable it makes itbasically uniquein the sense of every single element with the different valeus for the name post and image name are goinf to be unique are goinf to be unique and you are going to compute rather swift ui is going to compute unique hash just some string value to represent it.
-struct AshkbookPostModel: Hashable {
+struct PostModel: Hashable {
     // variables of every post
     let name: String
     let post: String
@@ -16,14 +19,20 @@ struct AshkbookPostModel: Hashable {
 
 struct HomeScreen: View {
     
-    @Binding var text: String
+    @State private var imageURL = URL(string: "")
+
+    @ObservedObject var model = NewPostService()
+    
+//    @Binding var text: String
     
     let stories = ["story1", "story2", "story3", "story1", "story2", "story3"]
     
-    let posts: [AshkbookPostModel] = [
-        AshkbookPostModel(name: "Ashkan Goharfar", post: "Hello, welcome to Smart Online Shopping application :)", imageName: "person1"),
-        AshkbookPostModel(name: "Margo Robby", post: "I like this shop's products and also the Augmented Reality feature of the app which is awsome!!", imageName: "person2"),
-        AshkbookPostModel(name: "Brad Pit", post: "I like this application very much. I hope I can see other version of this application very soon.", imageName: "person3")]
+
+    
+//    let posts: [NewPostModel] = [
+//        NewPostModel(id: "1111", name: "Ashkan Goharfar", post: "Hello, welcome to Smart Online Shopping application :)", imageName: "person1"),
+//        NewPostModel(id: "1112", name: "Margo Robby", post: "I like this shop's products and also the Augmented Reality feature of the app which is awsome!!", imageName: "person2"),
+//        NewPostModel(id: "1113", name: "Brad Pit", post: "I like this application very much. I hope I can see other version of this application very soon.", imageName: "person3")]
     
     // grabbed facebook rgb color value
     let facebookBlue = UIColor(red: 23/255.0,
@@ -77,15 +86,33 @@ struct HomeScreen: View {
                         StoriesView(stories: stories)
                         
                         // Add FaceBook Post
-                        ForEach(posts, id: \.self) { model in
-                            PostView(model: model)
-                            Spacer()
+//                        ForEach(posts, id: \.self) { model in
+//                            PostView(model: model)
+//                            Spacer()
+//                        }
+                        
+                        
+                        ForEach (model.list) { item in
+                            
+                            HStack {
+                                PostView(model: item)
+                                Spacer()
+
+                            }
                         }
+
                     }
                 }
             }
             
             Spacer()
         }
+
+    }
+    
+
+    init(model: NewPostService) {
+        self.model = model
+        self.model.getData()
     }
 }

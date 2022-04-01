@@ -10,10 +10,11 @@ import SwiftUI
 struct MainView: View {
 
     @State private var selectedTab = "Home"
+    @ObservedObject var model = NewPostService()
 
     var body: some View {
         TabView {
-            HomeScreen(text: .constant(""))
+            HomeScreen(model: model)
                 .tabItem {
                     Label("Home", systemImage: "house.fill")
                 }
@@ -35,5 +36,6 @@ struct MainView: View {
                 }
         }
     }
+    
 }
 
