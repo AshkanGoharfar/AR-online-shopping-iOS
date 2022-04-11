@@ -14,5 +14,5 @@ struct NewPostModel: Identifiable,Hashable {
     var name: String
     var post: String
     var imageName: String
-    
+    var time: Double
 }

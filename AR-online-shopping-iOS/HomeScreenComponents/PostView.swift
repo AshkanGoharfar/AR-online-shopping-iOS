@@ -17,6 +17,8 @@ struct PostView: View  {
     @State var isLiked: Bool = false
     
     @State private var imageURL = URL(string: "")
+    
+    @State private var stringTime = ""
 
     let model: NewPostModel
     
@@ -32,12 +34,18 @@ struct PostView: View  {
                     .cornerRadius(50/2)
 
                 
+                
                 VStack {
                     HStack {
                         Text(model.name)
                             .foregroundColor(Color.blue)
                             .font(.system(size: 18, weight: .semibold, design: .default))
                         Spacer()
+                        
+                        Text(self.stringTime)
+                            .foregroundColor(Color.gray)
+                            .font(.system(size: 18, weight: .semibold, design: .default))
+                            .onAppear(perform: convertTime)
                     }
                     
 //                    HStack {
@@ -89,6 +97,24 @@ struct PostView: View  {
         .padding()
         .background(Color(.systemBackground))
         .cornerRadius(7)
+    }
+    
+    func convertTime(){
+        let timeNow = NSDate().timeIntervalSince1970
+        var timeNowString = ""
+        var postTimeString = ""
+        let formatter = DateFormatter()
+        formatter.dateFormat = "HH:mm E, d MMM y"
+        // self.stringTime
+        postTimeString = formatter.string(from: NSDate(timeIntervalSince1970: model.time) as Date)
+        timeNowString = formatter.string(from: NSDate(timeIntervalSince1970: timeNow) as Date)
+        
+        if (postTimeString.components(separatedBy: " ")[2] == timeNowString.components(separatedBy: " ")[2]){
+            self.stringTime = postTimeString.components(separatedBy: " ")[0]
+        }
+        else {
+            self.stringTime = postTimeString.components(separatedBy: " ")[2] + postTimeString.components(separatedBy: " ")[3] + postTimeString.components(separatedBy: " ")[4]
+        }
     }
     
     func loadImageFromFirebase() {

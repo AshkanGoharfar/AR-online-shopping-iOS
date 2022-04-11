@@ -58,14 +58,14 @@ class NewPostService: ObservableObject {
 //        }
 //    }
     
-    func addData(name: String, notes: String, imageName: String){
+    func addData(name: String, notes: String, imageName: String, time: Double){
         
         // Get a reference to the database
         let db = Firestore.firestore()
         
         // Get a document to the collection
         // the first parameter is the data that we put in to the document and the scond is the result of code that we run after once
-        db.collection("newPost").addDocument(data: ["name": name, "post": notes, "imageName": imageName]) { error in
+        db.collection("newPost").addDocument(data: ["name": name, "post": notes, "imageName": imageName, "time": time]) { error in
             
             // Check for errors
             if error == nil {
@@ -106,7 +106,7 @@ class NewPostService: ObservableObject {
                                         // as we don't know what is the type of data, we are gonna cast it as string
                                         name: d["name"] as? String ?? "",
                                         post: d["post"] as? String ?? "",
-                                                imageName: d["imageName"] as? String ?? "")
+                                                imageName: d["imageName"] as? String ?? "", time: d["time"] as? Double ?? 0.0)
                         }
                     }
                 }

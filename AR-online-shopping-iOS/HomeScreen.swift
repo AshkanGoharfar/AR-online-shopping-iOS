@@ -22,10 +22,17 @@ struct HomeScreen: View {
     @State private var imageURL = URL(string: "")
 
     @ObservedObject var model = NewPostService()
-    
+
+    @State var sortedPosts = NewPostService()
+
 //    @Binding var text: String
     
     let stories = ["story1", "story2", "story3", "story1", "story2", "story3"]
+    
+    
+    
+    
+    
     
 
     
@@ -92,7 +99,7 @@ struct HomeScreen: View {
 //                        }
                         
                         
-                        ForEach (model.list) { item in
+                        ForEach (model.list.sorted {$0.time < $1.time}.reversed()) { item in
                             
                             HStack {
                                 PostView(model: item)
@@ -107,10 +114,14 @@ struct HomeScreen: View {
             
             Spacer()
         }
-
+            }
+    
+    func sortPosts(){
+        self.sortedPosts.list = model.list.sorted {
+            $0.time < $1.time
+        }
     }
     
-
     init(model: NewPostService) {
         self.model = model
         self.model.getData()

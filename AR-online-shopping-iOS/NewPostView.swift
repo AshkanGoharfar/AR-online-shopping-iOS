@@ -33,6 +33,8 @@ struct NewPostView: View {
     
     @FocusState private var nameIsFocused: Bool
     
+    @State private var timestamp = 0.0
+    
     var body: some View {
         VStack {
             Text("Upload a post about what you purchased").font(.largeTitle)
@@ -74,6 +76,8 @@ struct NewPostView: View {
         let storage = Storage.storage()
         let storageRef = storage.reference()
 
+        self.timestamp = NSDate().timeIntervalSince1970
+        
         // Create a reference to the file you want to download
         let starsRef = storageRef.child(email)
         Storage.storage().reference().child(email).downloadURL { (url, error) in
@@ -84,7 +88,7 @@ struct NewPostView: View {
             }
             print("dasdasd")
             print(url)
-            model.addData(name: email, notes: text, imageName: url?.absoluteString ?? "")
+            model.addData(name: email, notes: text, imageName: url?.absoluteString ?? "", time: self.timestamp)
             text = ""
             nameIsFocused = false
         }
