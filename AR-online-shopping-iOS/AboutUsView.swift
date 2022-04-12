@@ -4,7 +4,6 @@
 //
 //  Created by Ashkan Goharfar on 2022-03-23.
 //
-
 import SwiftUI
 import MessageUI
 import FirebaseAuth
@@ -46,12 +45,96 @@ struct AboutUsView: View {
                 .padding()
 
             HStack{
-            Text("This application aims to provide agumented reality features for online shopping to improve user expreiences. \n \n This application was developed by a group of students to make online shopping easer compatre with the popular applications. \n \n You can contact the shop by SMS or email. Also, you can follow the shop on the Facebook and Instagram.\n \n We hope you enjoy shopping while using this app!")
+            Text("This application aims to provide agumented reality features for online shopping to improve user expreiences. \n \n This application is developed by a group of students to make online shopping easer compatre with the popular applications. \n \n You can contact the shop by SMS or email. Also, you can follow the shop on the Facebook and Instagram.\n \n We hope you enjoy shopping while using this app!")
                     .padding()
             }
             
             HStack{
-            Text("Contact Us")
+            Text("Help")
+                    .font(.title)
+                    .fontWeight(.bold)
+                    .frame(width: 300)
+            }
+                .padding()
+            
+            
+            VStack{
+                HStack{
+                    Text("Home Screen")
+                            .fontWeight(.bold)
+                            .padding()
+                    Spacer()
+                }
+
+                HStack{
+                    Text("Shows the new offers and posts.")
+                            .padding()
+                    Spacer()
+                }
+                
+                HStack{
+                    Text("Products Screen")
+                            .fontWeight(.bold)
+                            .padding()
+                    Spacer()
+                }
+
+                HStack{
+            Text("Shows the products and options to select them and buy.")
+                    .padding()
+                    Spacer()
+                }
+                
+                HStack{
+                    Text("Post Screen")
+                            .fontWeight(.bold)
+                            .padding()
+                    Spacer()
+                }
+
+                
+                HStack{
+            Text("Will offer you to write a post and send it to the Home Screen.")
+                    .padding()
+                    Spacer()
+                }
+
+                
+                HStack{
+                    Text("Reality Screen")
+                            .fontWeight(.bold)
+                            .padding()
+                    Spacer()
+                }
+
+                HStack{
+            Text("This screen will allow you to locate each of the products in your place and see how they are look like there to have a good shopping experience.")
+                    .padding()
+                    Spacer()
+                }
+                
+                HStack{
+                    Text("Setting Screen")
+                            .fontWeight(.bold)
+                            .padding()
+                    Spacer()
+                }
+
+                HStack{
+            Text("In this screen you can see help screen, about the applicatio, contact us through SMS or Email, and Sign out options.")
+                    .padding()
+                    Spacer()
+                }
+
+            }
+
+            
+            HStack{
+                Text("Contact Us")
+                        .font(.title)
+                        .fontWeight(.bold)
+                        .frame(width: 300)
+                        .padding()
             }
             HStack {
                 Spacer()
@@ -82,8 +165,13 @@ struct AboutUsView: View {
             Spacer()
             
             HStack{
-            Text("Follow Us")
+                Text("Follow Us")
+                        .font(.title)
+                        .fontWeight(.bold)
+                        .frame(width: 300)
+                        .padding()
             }
+            
             HStack{
                 Spacer()
                 Button(action: {
@@ -128,6 +216,15 @@ struct AboutUsView: View {
     }
             Spacer()
             VStack {
+                
+                HStack{
+                    Text("Sign Out")
+                            .font(.title)
+                            .fontWeight(.bold)
+                            .frame(width: 300)
+                            .padding()
+                }
+                
                 Button(action: {
                     viewModel.signOut()
                 }, label: {

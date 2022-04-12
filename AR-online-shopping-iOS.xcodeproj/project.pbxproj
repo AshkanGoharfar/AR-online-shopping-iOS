@@ -28,6 +28,7 @@
 		5346BC4E27F38D94003D716F /* NewPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5346BC4D27F38D94003D716F /* NewPostView.swift */; };
 		5350836428060B2E005F7641 /* StoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5350836328060B2E005F7641 /* StoryModel.swift */; };
 		5350836628060E10005F7641 /* StoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5350836528060E10005F7641 /* StoryService.swift */; };
+		5350836828061FDE005F7641 /* HelpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5350836728061FDE005F7641 /* HelpScreen.swift */; };
 		53558D712804B604009B7152 /* ProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53558D702804B604009B7152 /* ProductService.swift */; };
 		53558D832804DB63009B7152 /* NewPostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53558D822804DB63009B7152 /* NewPostModel.swift */; };
 		536BF1C127E6301F00F4E28B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536BF1C027E6301F00F4E28B /* AppDelegate.swift */; };
@@ -88,6 +89,7 @@
 		5346BC4D27F38D94003D716F /* NewPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostView.swift; sourceTree = "<group>"; };
 		5350836328060B2E005F7641 /* StoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryModel.swift; sourceTree = "<group>"; };
 		5350836528060E10005F7641 /* StoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryService.swift; sourceTree = "<group>"; };
+		5350836728061FDE005F7641 /* HelpScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpScreen.swift; sourceTree = "<group>"; };
 		53558D702804B604009B7152 /* ProductService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductService.swift; sourceTree = "<group>"; };
 		53558D822804DB63009B7152 /* NewPostModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewPostModel.swift; path = ../../../../../.Trash/NewPostModel.swift; sourceTree = "<group>"; };
 		536BF1BD27E6301F00F4E28B /* AR-online-shopping-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AR-online-shopping-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -227,6 +229,7 @@
 				53558D702804B604009B7152 /* ProductService.swift */,
 				5350836328060B2E005F7641 /* StoryModel.swift */,
 				5350836528060E10005F7641 /* StoryService.swift */,
+				5350836728061FDE005F7641 /* HelpScreen.swift */,
 			);
 			path = "AR-online-shopping-iOS";
 			sourceTree = "<group>";
@@ -543,6 +546,7 @@
 				5346BC4E27F38D94003D716F /* NewPostView.swift in Sources */,
 				536BF1C327E6301F00F4E28B /* ContentView.swift in Sources */,
 				5335925027EA45080046851F /* ARViewScreen.swift in Sources */,
+				5350836828061FDE005F7641 /* HelpScreen.swift in Sources */,
 				5332861E27F62B0F00714161 /* NewPostService.swift in Sources */,
 				5350836428060B2E005F7641 /* StoryModel.swift in Sources */,
 				5335926027EA5F6B0046851F /* CartManager.swift in Sources */,

@@ -14,11 +14,7 @@ struct ProductRow: View {
     
     var body: some View {
         HStack(spacing: 20) {
-//            Text(product.image)
-//
-//
-//            Text("https://firebasestorage.googleapis.com/v0/b/ar-online-shopping-ios.appspot.com/o/products%2Fteapot_2x.jpeg?alt=media&token=4a5c9ae3-1354-4463-8023-64633b857649")
-//
+
             WebImage(url: URL(string: product.image))
                 .resizable()
                 .aspectRatio(contentMode: .fit)
