@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SDWebImageSwiftUI
 
 struct ProductRow: View {
     @EnvironmentObject var cartManager: CartManager
@@ -13,7 +14,12 @@ struct ProductRow: View {
     
     var body: some View {
         HStack(spacing: 20) {
-            Image(product.image)
+//            Text(product.image)
+//
+//
+//            Text("https://firebasestorage.googleapis.com/v0/b/ar-online-shopping-ios.appspot.com/o/products%2Fteapot_2x.jpeg?alt=media&token=4a5c9ae3-1354-4463-8023-64633b857649")
+//
+            WebImage(url: URL(string: product.image))
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 50)
@@ -41,7 +47,7 @@ struct ProductRow: View {
 
 struct ProductRow_Previews: PreviewProvider {
     static var previews: some View {
-        ProductRow(product: productList[3])
+        ProductRow(product: Product(id: "2", name: "redchair", image: "redchair_2x", price: 12))
             .environmentObject(CartManager())
     }
 }

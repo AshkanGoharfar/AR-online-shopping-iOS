@@ -10,6 +10,10 @@ import SwiftUI
 struct ShopHomeScreen: View {
     // Initialize an instance of CartManager
     @StateObject var cartManager = CartManager()
+    
+    @ObservedObject var model = ProductService()
+
+    
     var columns = [GridItem(.adaptive(minimum: 160), spacing: 20)]
     
     var body: some View {
@@ -17,11 +21,34 @@ struct ShopHomeScreen: View {
         NavigationView {
             ScrollView {
                 LazyVGrid(columns: columns, spacing: 20) {
-                    ForEach(productList, id: \.id) { product in
+                    ForEach(model.list) { product in
                         ProductCard(product: product)
                             .environmentObject(cartManager)
                     }
+                    
+                    
+                    
+                    
+//                        ForEach(posts, id: \.self) { model in
+//                            PostView(model: model)
+//                            Spacer()
+//                        }
+                    
+                    
+//                    ForEach (model.list.sorted {$0.time < $1.time}.reversed()) { item in
+//                        
+//                        HStack {
+//                            PostView(model: item)
+//                            Spacer()
+//
+//                        }
+//                    }
+                    
+                    
+                    
+                    
                 }
+                .onAppear(perform: model.getData)
                 .padding()
             }
             .navigationTitle(Text("Smart Online Shopping")
@@ -40,4 +67,9 @@ struct ShopHomeScreen: View {
         }
         .navigationViewStyle(StackNavigationViewStyle())
     }
+    
+//    init(model: ProductService) {
+//        self.model = model
+//        self.model.getData()
+//    }
 }

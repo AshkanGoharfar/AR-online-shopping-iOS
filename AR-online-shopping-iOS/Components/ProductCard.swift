@@ -6,16 +6,27 @@
 //
 
 import SwiftUI
+import SDWebImageSwiftUI
 
 struct ProductCard: View {
     // environemt object modifier of CartManager
     @EnvironmentObject var cartManager: CartManager
+//    var product: Product
+    
+    
+    
+    
+    @State private var imageURL = URL(string: "")
+    
+    
     var product: Product
+    
+    
     
     var body: some View {
         ZStack(alignment: .topTrailing) {
             ZStack(alignment: .bottom) {
-                Image(product.image)
+                WebImage(url: URL(string: product.image))
                     .resizable()
                     .cornerRadius(20)
                     .frame(width: 180)
@@ -52,7 +63,7 @@ struct ProductCard: View {
 
 struct ProductCard_Previews: PreviewProvider {
     static var previews: some View {
-        ProductCard(product: productList[0])
+        ProductCard(product: Product(id: "1", name: "cupandsaucer", image: "cupandsaucer_2x", price: 10))
             .environmentObject(CartManager())
     }
 }

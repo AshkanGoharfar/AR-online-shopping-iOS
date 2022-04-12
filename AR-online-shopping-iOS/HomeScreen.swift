@@ -111,6 +111,7 @@ struct HomeScreen: View {
                     }
                 }
             }
+            .onAppear(perform: model.getData)
             
             Spacer()
         }
@@ -122,8 +123,8 @@ struct HomeScreen: View {
         }
     }
     
-    init(model: NewPostService) {
-        self.model = model
-        self.model.getData()
-    }
+//    init(model: NewPostService) {
+//        self.model = model
+//        self.model.getData()
+//    }
 }
