@@ -33,7 +33,7 @@ struct MainView: View {
                 }
             AboutUsView()
                 .tabItem {
-                    Label("About", systemImage: "person.3.fill")
+                    Label("Setting", systemImage: "gear.circle.fill")
                 }
         }
     }

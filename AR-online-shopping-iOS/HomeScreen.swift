@@ -29,12 +29,7 @@ struct HomeScreen: View {
     
     let stories = ["story1", "story2", "story3", "story1", "story2", "story3"]
     
-    
-    
-    
-    
-    
-
+    @ObservedObject var modelStory = StoryService()
     
 //    let posts: [NewPostModel] = [
 //        NewPostModel(id: "1111", name: "Ashkan Goharfar", post: "Hello, welcome to Smart Online Shopping application :)", imageName: "person1"),
@@ -42,9 +37,9 @@ struct HomeScreen: View {
 //        NewPostModel(id: "1113", name: "Brad Pit", post: "I like this application very much. I hope I can see other version of this application very soon.", imageName: "person3")]
     
     // grabbed facebook rgb color value
-    let facebookBlue = UIColor(red: 23/255.0,
-                               green: 120/255.0,
-                               blue: 242/255.0,
+    let orangeColor = UIColor(red: 255/255.0,
+                               green: 145/255.0,
+                               blue: 0/255.0,
                                alpha: 1)
     
     var body: some View {
@@ -56,7 +51,7 @@ struct HomeScreen: View {
                 // Assign Font size
 
                 Text("Smart Online Shopping")
-                    .foregroundColor(Color(facebookBlue))
+                    .foregroundColor(Color(orangeColor))
                     .font(.system(size: 28, weight: .bold, design: .default))
 
                 // make a spacer to seprate text and sf symbol
@@ -90,13 +85,25 @@ struct HomeScreen: View {
                 ScrollView(.vertical) {
                     VStack {
                         
-                        StoriesView(stories: stories)
-                        
-                        // Add FaceBook Post
-//                        ForEach(posts, id: \.self) { model in
-//                            PostView(model: model)
-//                            Spacer()
-//                        }
+//                        StoriesView(stories: stories)
+                        ScrollView(.horizontal, showsIndicators: false) {
+                            HStack(spacing: 10) {
+                                
+                                ForEach(modelStory.list) { story in
+                                    WebImage(url: URL(string: story.image))
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fill)
+                                    
+                                        .frame(width: 140, height: 200, alignment: .center)
+                                        .background(Color.red)
+                                    
+                                        // fianly clipped it here
+                                        .clipped()
+                                }
+                            }
+                            .onAppear(perform: modelStory.getData)
+                            .padding()
+                        }
                         
                         
                         ForEach (model.list.sorted {$0.time < $1.time}.reversed()) { item in
@@ -111,10 +118,9 @@ struct HomeScreen: View {
                     }
                 }
             }
-            .onAppear(perform: model.getData)
-            
             Spacer()
         }
+        .onAppear(perform: model.getData)
             }
     
     func sortPosts(){
@@ -122,9 +128,5 @@ struct HomeScreen: View {
             $0.time < $1.time
         }
     }
-    
-//    init(model: NewPostService) {
-//        self.model = model
-//        self.model.getData()
-//    }
+
 }

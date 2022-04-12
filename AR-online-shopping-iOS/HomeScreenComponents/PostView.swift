@@ -20,6 +20,11 @@ struct PostView: View  {
     
     @State private var stringTime = ""
 
+    let orangeColor = UIColor(red: 255/255.0,
+                               green: 145/255.0,
+                               blue: 0/255.0,
+                               alpha: 1)
+    
     let model: NewPostModel
     
     var body: some View {
@@ -38,7 +43,7 @@ struct PostView: View  {
                 VStack {
                     HStack {
                         Text(model.name)
-                            .foregroundColor(Color.blue)
+                            .foregroundColor(Color(orangeColor))
                             .font(.system(size: 18, weight: .semibold, design: .default))
                         Spacer()
                         

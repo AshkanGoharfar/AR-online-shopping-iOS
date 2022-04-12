@@ -31,17 +31,7 @@ struct AboutUsView: View {
 
     var body: some View {
         ScrollView{
-            VStack {
-                Button(action: {
-                    viewModel.signOut()
-                }, label: {
-                    Text("Sign Out")
-                        .frame(width: 200, height: 50)
-                        .background(Color.green)
-                        .foregroundColor(Color.blue)
-                        .padding()
-                })
-            }
+
 
             ZStack{
         VStack {
@@ -136,7 +126,21 @@ struct AboutUsView: View {
 
         }
     }
+            Spacer()
+            VStack {
+                Button(action: {
+                    viewModel.signOut()
+                }, label: {
+                    Text("Sign Out")
+                        .frame(width: 300, height: 40)
+                        .foregroundColor(.black)
+                        .background(.orange)
+                        .cornerRadius(15)
+                })
+            }
+            Spacer()
     }
+        
     }
 }
 
