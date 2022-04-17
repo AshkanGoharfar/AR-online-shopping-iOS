@@ -14,6 +14,7 @@ struct Product: Identifiable,Hashable {
     var name: String
     var image: String
     var price: Int
+    var description: String
 }
 
 // we do not set up the id here, because its already set up in the model

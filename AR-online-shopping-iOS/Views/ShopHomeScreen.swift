@@ -22,8 +22,10 @@ struct ShopHomeScreen: View {
             ScrollView {
                 LazyVGrid(columns: columns, spacing: 20) {
                     ForEach(model.list) { product in
-                        ProductCard(product: product)
-                            .environmentObject(cartManager)
+                        NavigationLink(destination: ProductView(product: product)){
+                            ProductCard(product: product)
+                                .environmentObject(cartManager)
+                        }
                     }
                     
                     
@@ -51,7 +53,7 @@ struct ShopHomeScreen: View {
                 .onAppear(perform: model.getData)
                 .padding()
             }
-            .navigationTitle(Text("Smart Online Shopping")
+            .navigationTitle(Text("Products")
                 .foregroundColor(Color(UIColor(red: 23/255.0,
                                                green: 120/255.0,
                                                blue: 242/255.0,
