@@ -30,7 +30,6 @@
 		5350836628060E10005F7641 /* StoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5350836528060E10005F7641 /* StoryService.swift */; };
 		5350836828061FDE005F7641 /* HelpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5350836728061FDE005F7641 /* HelpScreen.swift */; };
 		53558D712804B604009B7152 /* ProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53558D702804B604009B7152 /* ProductService.swift */; };
-		53558D832804DB63009B7152 /* NewPostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53558D822804DB63009B7152 /* NewPostModel.swift */; };
 		536BF1C127E6301F00F4E28B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536BF1C027E6301F00F4E28B /* AppDelegate.swift */; };
 		536BF1C327E6301F00F4E28B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536BF1C227E6301F00F4E28B /* ContentView.swift */; };
 		536BF1C727E6302200F4E28B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 536BF1C627E6302200F4E28B /* Assets.xcassets */; };
@@ -42,6 +41,7 @@
 		536BF1F227E6390600F4E28B /* chair_swan.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 536BF1EE27E6390600F4E28B /* chair_swan.usdz */; };
 		536BF1F327E6390600F4E28B /* gramophone.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 536BF1EF27E6390600F4E28B /* gramophone.usdz */; };
 		536BF1F427E6390600F4E28B /* teapot.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 536BF1F027E6390600F4E28B /* teapot.usdz */; };
+		5383D7A3280C943F009BF6DF /* NewPostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5383D7A2280C943F009BF6DF /* NewPostModel.swift */; };
 		53C281A227E7987B00163FEB /* Model3D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C281A127E7987B00163FEB /* Model3D.swift */; };
 		53C5131D27E7B5C60011930A /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = 53C5131C27E7B5C60011930A /* FocusEntity */; };
 		53C5131F27E7BC6F0011930A /* FocusARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C5131E27E7BC6F0011930A /* FocusARView.swift */; };
@@ -91,7 +91,6 @@
 		5350836528060E10005F7641 /* StoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryService.swift; sourceTree = "<group>"; };
 		5350836728061FDE005F7641 /* HelpScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpScreen.swift; sourceTree = "<group>"; };
 		53558D702804B604009B7152 /* ProductService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductService.swift; sourceTree = "<group>"; };
-		53558D822804DB63009B7152 /* NewPostModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewPostModel.swift; path = ../../../../../.Trash/NewPostModel.swift; sourceTree = "<group>"; };
 		536BF1BD27E6301F00F4E28B /* AR-online-shopping-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AR-online-shopping-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		536BF1C027E6301F00F4E28B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		536BF1C227E6301F00F4E28B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -106,6 +105,7 @@
 		536BF1EE27E6390600F4E28B /* chair_swan.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = chair_swan.usdz; sourceTree = "<group>"; };
 		536BF1EF27E6390600F4E28B /* gramophone.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = gramophone.usdz; sourceTree = "<group>"; };
 		536BF1F027E6390600F4E28B /* teapot.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = teapot.usdz; sourceTree = "<group>"; };
+		5383D7A2280C943F009BF6DF /* NewPostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostModel.swift; sourceTree = "<group>"; };
 		53C281A127E7987B00163FEB /* Model3D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model3D.swift; sourceTree = "<group>"; };
 		53C5131E27E7BC6F0011930A /* FocusARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusARView.swift; sourceTree = "<group>"; };
 		71F21ECC4BFFFD0AD8625FCC /* Pods-AR-online-shopping-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AR-online-shopping-iOS.debug.xcconfig"; path = "Target Support Files/Pods-AR-online-shopping-iOS/Pods-AR-online-shopping-iOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -224,8 +224,8 @@
 				534562B827F1FE7E008E1B5E /* MainView.swift */,
 				534562BA27F222BB008E1B5E /* UserAuthentication.swift */,
 				5346BC4D27F38D94003D716F /* NewPostView.swift */,
+				5383D7A2280C943F009BF6DF /* NewPostModel.swift */,
 				5332861D27F62B0F00714161 /* NewPostService.swift */,
-				53558D822804DB63009B7152 /* NewPostModel.swift */,
 				53558D702804B604009B7152 /* ProductService.swift */,
 				5350836328060B2E005F7641 /* StoryModel.swift */,
 				5350836528060E10005F7641 /* StoryService.swift */,
@@ -550,6 +550,7 @@
 				5332861E27F62B0F00714161 /* NewPostService.swift in Sources */,
 				5350836428060B2E005F7641 /* StoryModel.swift in Sources */,
 				5335926027EA5F6B0046851F /* CartManager.swift in Sources */,
+				5383D7A3280C943F009BF6DF /* NewPostModel.swift in Sources */,
 				536BF1C127E6301F00F4E28B /* AppDelegate.swift in Sources */,
 				53C5131F27E7BC6F0011930A /* FocusARView.swift in Sources */,
 				534562BB27F222BB008E1B5E /* UserAuthentication.swift in Sources */,
@@ -565,7 +566,6 @@
 				5335925627EA55A70046851F /* Product.swift in Sources */,
 				5332861C27F6268000714161 /* ImagePicker.swift in Sources */,
 				534162CF27EB9A6F0045338C /* PostView.swift in Sources */,
-				53558D832804DB63009B7152 /* NewPostModel.swift in Sources */,
 				5335925927EA56F80046851F /* ProductCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
