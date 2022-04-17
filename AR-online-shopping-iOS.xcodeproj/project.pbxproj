@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		107D23A7FD72C1622F61D102 /* Pods_AR_online_shopping_iOS_AR_online_shopping_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA548F5A8666EE0CAA0335A1 /* Pods_AR_online_shopping_iOS_AR_online_shopping_iOSUITests.framework */; };
 		34ACAD425EA20ED2AD5C6F48 /* Pods_AR_online_shopping_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CD2F8A5D669E938773B36E7 /* Pods_AR_online_shopping_iOS.framework */; };
-		5332861C27F6268000714161 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5332861B27F6268000714161 /* ImagePicker.swift */; };
 		5332861E27F62B0F00714161 /* NewPostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5332861D27F62B0F00714161 /* NewPostService.swift */; };
 		5335925027EA45080046851F /* ARViewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5335924F27EA45080046851F /* ARViewScreen.swift */; };
 		5335925227EA4B760046851F /* ShopHomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5335925127EA4B760046851F /* ShopHomeScreen.swift */; };
@@ -42,6 +41,7 @@
 		536BF1F327E6390600F4E28B /* gramophone.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 536BF1EF27E6390600F4E28B /* gramophone.usdz */; };
 		536BF1F427E6390600F4E28B /* teapot.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 536BF1F027E6390600F4E28B /* teapot.usdz */; };
 		5383D7A3280C943F009BF6DF /* NewPostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5383D7A2280C943F009BF6DF /* NewPostModel.swift */; };
+		5383D7A5280C955F009BF6DF /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5383D7A4280C955F009BF6DF /* ImagePicker.swift */; };
 		53C281A227E7987B00163FEB /* Model3D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C281A127E7987B00163FEB /* Model3D.swift */; };
 		53C5131D27E7B5C60011930A /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = 53C5131C27E7B5C60011930A /* FocusEntity */; };
 		53C5131F27E7BC6F0011930A /* FocusARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C5131E27E7BC6F0011930A /* FocusARView.swift */; };
@@ -70,7 +70,6 @@
 		2CD2F8A5D669E938773B36E7 /* Pods_AR_online_shopping_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AR_online_shopping_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DE9EE8F976BC286D7905E79 /* Pods-AR-online-shopping-iOS-AR-online-shopping-iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AR-online-shopping-iOS-AR-online-shopping-iOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-AR-online-shopping-iOS-AR-online-shopping-iOSUITests/Pods-AR-online-shopping-iOS-AR-online-shopping-iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		32029C3F81D02BA8A2480A7A /* Pods-AR-online-shopping-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AR-online-shopping-iOSTests.release.xcconfig"; path = "Target Support Files/Pods-AR-online-shopping-iOSTests/Pods-AR-online-shopping-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		5332861B27F6268000714161 /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImagePicker.swift; path = ../../../../FirebaseTest/FirebaseTest/ImagePicker.swift; sourceTree = "<group>"; };
 		5332861D27F62B0F00714161 /* NewPostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostService.swift; sourceTree = "<group>"; };
 		5335924F27EA45080046851F /* ARViewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewScreen.swift; sourceTree = "<group>"; };
 		5335925127EA4B760046851F /* ShopHomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopHomeScreen.swift; sourceTree = "<group>"; };
@@ -106,6 +105,7 @@
 		536BF1EF27E6390600F4E28B /* gramophone.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = gramophone.usdz; sourceTree = "<group>"; };
 		536BF1F027E6390600F4E28B /* teapot.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = teapot.usdz; sourceTree = "<group>"; };
 		5383D7A2280C943F009BF6DF /* NewPostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostModel.swift; sourceTree = "<group>"; };
+		5383D7A4280C955F009BF6DF /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		53C281A127E7987B00163FEB /* Model3D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model3D.swift; sourceTree = "<group>"; };
 		53C5131E27E7BC6F0011930A /* FocusARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusARView.swift; sourceTree = "<group>"; };
 		71F21ECC4BFFFD0AD8625FCC /* Pods-AR-online-shopping-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AR-online-shopping-iOS.debug.xcconfig"; path = "Target Support Files/Pods-AR-online-shopping-iOS/Pods-AR-online-shopping-iOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -220,9 +220,9 @@
 				5335924F27EA45080046851F /* ARViewScreen.swift */,
 				5335925F27EA5F6B0046851F /* CartManager.swift */,
 				534162D527EB9E3D0045338C /* AboutUsView.swift */,
-				5332861B27F6268000714161 /* ImagePicker.swift */,
 				534562B827F1FE7E008E1B5E /* MainView.swift */,
 				534562BA27F222BB008E1B5E /* UserAuthentication.swift */,
+				5383D7A4280C955F009BF6DF /* ImagePicker.swift */,
 				5346BC4D27F38D94003D716F /* NewPostView.swift */,
 				5383D7A2280C943F009BF6DF /* NewPostModel.swift */,
 				5332861D27F62B0F00714161 /* NewPostService.swift */,
@@ -544,6 +544,7 @@
 			files = (
 				5335925E27EA5DA70046851F /* CartView.swift in Sources */,
 				5346BC4E27F38D94003D716F /* NewPostView.swift in Sources */,
+				5383D7A5280C955F009BF6DF /* ImagePicker.swift in Sources */,
 				536BF1C327E6301F00F4E28B /* ContentView.swift in Sources */,
 				5335925027EA45080046851F /* ARViewScreen.swift in Sources */,
 				5350836828061FDE005F7641 /* HelpScreen.swift in Sources */,
@@ -564,7 +565,6 @@
 				534562B927F1FE7E008E1B5E /* MainView.swift in Sources */,
 				534162D227EB9A850045338C /* HomeScreen.swift in Sources */,
 				5335925627EA55A70046851F /* Product.swift in Sources */,
-				5332861C27F6268000714161 /* ImagePicker.swift in Sources */,
 				534162CF27EB9A6F0045338C /* PostView.swift in Sources */,
 				5335925927EA56F80046851F /* ProductCard.swift in Sources */,
 			);
