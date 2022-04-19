@@ -78,7 +78,7 @@ struct NewPostView: View {
 
         self.timestamp = NSDate().timeIntervalSince1970
         
-        // Create a reference to the file you want to download
+        // Create a reference to the file you want to download profile photo
         let starsRef = storageRef.child(email)
         Storage.storage().reference().child(email).downloadURL { (url, error) in
              if error != nil {

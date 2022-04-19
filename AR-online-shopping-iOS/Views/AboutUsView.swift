@@ -41,6 +41,7 @@ struct AboutUsView: View {
                     .font(.title)
                     .fontWeight(.bold)
                     .frame(width: 300)
+                    .foregroundColor(Color(.orange))
             }
                 .padding()
 
@@ -54,6 +55,7 @@ struct AboutUsView: View {
                     .font(.title)
                     .fontWeight(.bold)
                     .frame(width: 300)
+                    .foregroundColor(Color(.orange))
             }
                 .padding()
             
@@ -134,6 +136,7 @@ struct AboutUsView: View {
                         .font(.title)
                         .fontWeight(.bold)
                         .frame(width: 300)
+                        .foregroundColor(Color(.orange))
                         .padding()
             }
             HStack {
@@ -142,7 +145,7 @@ struct AboutUsView: View {
 
                     .resizable()
                     .frame(width: 45, height: 35)
-                    .foregroundColor(Color(.orange))
+                    .foregroundColor(Color(.lightGray))
                     .onTapGesture{
                         self.presentMailCompose()
                     }
@@ -154,7 +157,7 @@ struct AboutUsView: View {
 
                     .resizable()
                     .frame(width: 45, height: 45)
-                    .foregroundColor(Color(.orange))
+                    .foregroundColor(Color(.lightGray))
                     .onTapGesture{
                         self.presentMessageCompose()
                     }
@@ -164,11 +167,13 @@ struct AboutUsView: View {
             
             Spacer()
             
+            
             HStack{
                 Text("Follow Us")
                         .font(.title)
                         .fontWeight(.bold)
                         .frame(width: 300)
+                        .foregroundColor(Color(.orange))
                         .padding()
             }
             
@@ -215,6 +220,7 @@ struct AboutUsView: View {
         }
     }
             Spacer()
+            Spacer()
             VStack {
                 
                 HStack{
@@ -222,6 +228,7 @@ struct AboutUsView: View {
                             .font(.title)
                             .fontWeight(.bold)
                             .frame(width: 300)
+                            .foregroundColor(Color(.orange))
                             .padding()
                 }
                 

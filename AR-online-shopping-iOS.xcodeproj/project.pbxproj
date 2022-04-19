@@ -146,9 +146,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		53331340280F506B00741D31 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				534562BA27F222BB008E1B5E /* UserAuthentication.swift */,
+				5332861D27F62B0F00714161 /* NewPostService.swift */,
+				53558D702804B604009B7152 /* ProductService.swift */,
+				5350836528060E10005F7641 /* StoryService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		5335925427EA557E0046851F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				5383D7A2280C943F009BF6DF /* NewPostModel.swift */,
+				5350836328060B2E005F7641 /* StoryModel.swift */,
+				53C281A127E7987B00163FEB /* Model3D.swift */,
 				5335925527EA55A70046851F /* Product.swift */,
 			);
 			path = Models;
@@ -157,6 +171,9 @@
 		5335925727EA56CE0046851F /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				53C5131E27E7BC6F0011930A /* FocusARView.swift */,
+				5383D7A4280C955F009BF6DF /* ImagePicker.swift */,
+				5335925F27EA5F6B0046851F /* CartManager.swift */,
 				5335925827EA56F80046851F /* ProductCard.swift */,
 				5335925B27EA5BE00046851F /* CartButton.swift */,
 				5335926127EA62110046851F /* ProductRow.swift */,
@@ -167,18 +184,18 @@
 		5335925A27EA59DF0046851F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				534162D527EB9E3D0045338C /* AboutUsView.swift */,
+				5335924F27EA45080046851F /* ARViewScreen.swift */,
+				5350836728061FDE005F7641 /* HelpScreen.swift */,
+				534162CD27EB9A6F0045338C /* PostView.swift */,
+				534162D127EB9A850045338C /* HomeScreen.swift */,
 				5335925127EA4B760046851F /* ShopHomeScreen.swift */,
 				5335925D27EA5DA70046851F /* CartView.swift */,
+				534562B827F1FE7E008E1B5E /* MainView.swift */,
+				5346BC4D27F38D94003D716F /* NewPostView.swift */,
+				5383D7A6280CA132009BF6DF /* ProductView.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		534162CC27EB99CC0045338C /* HomeScreenComponents */ = {
-			isa = PBXGroup;
-			children = (
-				534162CD27EB9A6F0045338C /* PostView.swift */,
-			);
-			path = HomeScreenComponents;
 			sourceTree = "<group>";
 		};
 		536BF1B427E6301F00F4E28B = {
@@ -207,32 +224,15 @@
 			isa = PBXGroup;
 			children = (
 				534562B527F1FE5C008E1B5E /* GoogleService-Info.plist */,
-				534162D127EB9A850045338C /* HomeScreen.swift */,
-				534162CC27EB99CC0045338C /* HomeScreenComponents */,
 				536BF1C227E6301F00F4E28B /* ContentView.swift */,
-				5335925A27EA59DF0046851F /* Views */,
+				536BF1C027E6301F00F4E28B /* AppDelegate.swift */,
 				5335925727EA56CE0046851F /* Components */,
 				5335925427EA557E0046851F /* Models */,
 				536BF1EC27E6388200F4E28B /* Model-Images */,
-				536BF1C027E6301F00F4E28B /* AppDelegate.swift */,
 				536BF1C627E6302200F4E28B /* Assets.xcassets */,
 				536BF1C827E6302200F4E28B /* Preview Content */,
-				53C281A127E7987B00163FEB /* Model3D.swift */,
-				53C5131E27E7BC6F0011930A /* FocusARView.swift */,
-				5335924F27EA45080046851F /* ARViewScreen.swift */,
-				5335925F27EA5F6B0046851F /* CartManager.swift */,
-				534162D527EB9E3D0045338C /* AboutUsView.swift */,
-				534562B827F1FE7E008E1B5E /* MainView.swift */,
-				534562BA27F222BB008E1B5E /* UserAuthentication.swift */,
-				5383D7A4280C955F009BF6DF /* ImagePicker.swift */,
-				5346BC4D27F38D94003D716F /* NewPostView.swift */,
-				5383D7A2280C943F009BF6DF /* NewPostModel.swift */,
-				5332861D27F62B0F00714161 /* NewPostService.swift */,
-				53558D702804B604009B7152 /* ProductService.swift */,
-				5350836328060B2E005F7641 /* StoryModel.swift */,
-				5350836528060E10005F7641 /* StoryService.swift */,
-				5350836728061FDE005F7641 /* HelpScreen.swift */,
-				5383D7A6280CA132009BF6DF /* ProductView.swift */,
+				53331340280F506B00741D31 /* Services */,
+				5335925A27EA59DF0046851F /* Views */,
 			);
 			path = "AR-online-shopping-iOS";
 			sourceTree = "<group>";
