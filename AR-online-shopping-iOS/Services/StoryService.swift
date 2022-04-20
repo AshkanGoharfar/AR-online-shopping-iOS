@@ -9,11 +9,11 @@ import Foundation
 import Firebase
 import FirebaseFirestore
 //import FireStore
-
+//This is for communicating with Firebase
 class StoryService: ObservableObject {
     
     @Published var list = [StoryModel]()
-
+    //This is to fetch data from the database
     func getData(){
         // Get a reference to the database
         let db = Firestore.firestore()
