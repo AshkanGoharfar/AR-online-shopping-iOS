@@ -26,7 +26,7 @@ struct HomeScreen: View {
     @State var sortedPosts = NewPostService()
 
 //    @Binding var text: String
-    
+    //These are offers, shown on the home screen.
     let stories = ["story1", "story2", "story3", "story1", "story2", "story3"]
     
     @ObservedObject var modelStory = StoryService()
