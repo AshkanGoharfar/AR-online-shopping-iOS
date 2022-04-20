@@ -2,7 +2,7 @@
 //  StoryService.swift
 //  AR-online-shopping-iOS
 //
-//  Created by Ashkan Goharfar on 2022-04-12.
+//  Created by Shirin Mansouri on 2022-04-12.
 //
 
 import Foundation
