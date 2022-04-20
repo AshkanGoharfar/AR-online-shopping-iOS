@@ -2,7 +2,7 @@
 //  UserAuthentication.swift
 //  AR-online-shopping-iOS
 //
-//  Created by Ashkan Goharfar on 2022-03-28.
+//  Created by Shirin Mansouri on 2022-03-28.
 //
 
 import SwiftUI
