@@ -9,7 +9,7 @@ import Foundation
 import Firebase
 import FirebaseFirestore
 //import FireStore
-//This is for communicating with Firebase
+//This is for communicating with Firebase for offers
 class StoryService: ObservableObject {
     
     @Published var list = [StoryModel]()
