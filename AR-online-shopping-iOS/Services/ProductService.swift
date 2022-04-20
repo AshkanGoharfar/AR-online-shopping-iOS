@@ -2,7 +2,7 @@
 //  ProductService.swift
 //  AR-online-shopping-iOS
 //
-//  Created by Ashkan Goharfar on 2022-04-11.
+//  Created by Shirin Mansouri on 2022-04-11.
 //
 
 import Foundation

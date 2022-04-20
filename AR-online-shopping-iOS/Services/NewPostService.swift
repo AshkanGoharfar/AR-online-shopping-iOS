@@ -14,50 +14,7 @@ class NewPostService: ObservableObject {
     
     @Published var list = [NewPostModel]()
     
-//    func updateData(todoToUpdate: NewPostModel) {
-//
-//        // Get a reference to the database
-//        let db = Firestore.firestore()
-//
-//        // Set the data to update
-//        db.collection("newPost").document(todoToUpdate.id).setData(["name": "Updated:\(todoToUpdate.name)"], merge: true) { error in
-//
-//            // Check for error
-//            if error == nil {
-//
-//                // Get the new data
-//                self.getData()
-//            }
-//        }
-//    }
-    
-//    func deleteData(todoToDelete: Todo) {
-//
-//        // Get a reference from the Database
-//        let db = Firestore.firestore()
-//
-//        // Specify the document to delete
-//        db.collection("todos").document(todoToDelete.id).delete { error in
-//
-//            // Check for errors
-//            if error == nil {
-//                // No errors
-//
-//                // Update the UI from the main thread
-//                DispatchQueue.main.async {
-//
-//                    // Remove the todo that was just delete
-//                    self.list.removeAll { todo in
-//
-//                        // Check for the todo to remove
-//                        return todo.id == todoToDelete.id
-//                    }
-//                }
-//
-//            }
-//        }
-//    }
-    
+  
     func addData(name: String, notes: String, imageName: String, time: Double){
         
         // Get a reference to the database
