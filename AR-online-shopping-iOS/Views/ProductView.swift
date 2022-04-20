@@ -2,7 +2,7 @@
 //  ProductView.swift
 //  AR-online-shopping-iOS
 //
-//  Created by Ashkan Goharfar on 2022-04-17.
+//  Created by Ali Roudak on 2022-04-17.
 //
 
 import SwiftUI
