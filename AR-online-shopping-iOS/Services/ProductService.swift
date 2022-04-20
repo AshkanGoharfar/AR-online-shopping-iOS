@@ -9,12 +9,12 @@ import Foundation
 import Firebase
 import FirebaseFirestore
 //import FireStore
-
+//This is for communicating with Firebase for products
 class ProductService: ObservableObject {
     
     @Published var list = [Product]()
     
-    
+    //This adds data to the database
     func addData(name: String, image: String, price: Int, description: String){
         
         // Get a reference to the database
@@ -37,7 +37,7 @@ class ProductService: ObservableObject {
             }
         }
     }
-    
+    //This fetches data from the database
     func getData(){
         // Get a reference to the database
         let db = Firestore.firestore()
