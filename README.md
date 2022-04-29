@@ -33,7 +33,7 @@ pod init
 ```
 
 
-Open the pod file by the following command to create pod file.
+Open the pod file by the following command to add dependencies.
 ```bash
 open podfile
 ```
