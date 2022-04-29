@@ -1,8 +1,8 @@
 ## Readme
 
 # Table of contents
-- [Demo](#App Demo)
-- [Running](#Running)
+- [App Demo](#App Demo)
+- [Running](#How to Run)
 - [Context](#Context)
 - [Content](#Content)
 - [How it's written](#How-it's-written)
@@ -12,7 +12,9 @@
 
 
 # App Demo
-https://youtu.be/pI7CugjIt2A
+
+Uploading iOS AR Online Shopping App Demo.mp4…
+
 
 # How to Run
 To Crawl alexa.com:
