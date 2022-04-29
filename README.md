@@ -24,6 +24,11 @@ Clone the repository:
 git clone https://github.com/AshkanGoharfar/AR-online-shopping-iOS.git
 ```
 
+Next, go to the project directory.
+```bash
+cd AR-online-shopping-iOS
+```
+
 Next, run the following command to create pod file.
 ```bash
 pod init
@@ -71,53 +76,22 @@ Finally, run the following command to install the dependencies to the podfile.
 pod install
 ```
 
+Connect your iphone to your Mac and run the code :)
 
-Write input and output file name and then write number of generation that you need
-
-To Crawl coinmarketcap.com airdrops:
-Run the following command.
-```bash
-$ python Collect_dataset.py
-```
 # Context
-Alexa Internet ranks websites primarily on tracking a sample set of Internet traffic—users of its toolbar for the Internet Explorer, Firefox and Google Chrome web browsers. The Alexa Toolbar includes a popup blocker (which stops unwanted ads), a search box, links to Amazon.com and the Alexa homepage, and the Alexa ranking of the website that the user is visiting. It also allows the user to rate the website and view links to external, relevant websites. Also, Alexa has prepared a list of information for each site for comparison and ranking with other similar sites for each site.
+## How Augmented Reality in Ecommerce Can Deliver a More Enticing Shopping Experience?
 
-This dataset is a record of all information on the top websites in each category in Alexa ranking.
+One of the biggest challenges of online shopping is that it doesn’t lend itself well to a full sensory product experience. In a brick-and-mortar environment, you can try on clothes, touch fabrics, or see for yourself just how big a couch looks in a room. 
+
+While those things aren’t technically possible in ecommerce, augmented reality (AR) applications offer a way to give customers deeper and more complete information about your products — right from their own home.
 
 # Content
-The dataset includes several site data, which were achieved from "alexa.com/siteinfo" (for example alexa.com/siteinfo/facebook.com). Data is included for the top 50 websites for every 550 categories in Alexa ranking. (The dataset was obtained for about 12200 sites.)
-The data also includes keyword opportunities breakdown fields, which vary between categories. As well as each site has important parameters like alltopicstopkeywordssearchtrafficparameter which represent search traffics in competitor websites to this site.
-For more details about each site's data, you can find the site's name and site's information in the dataset and you can search alexa.com/siteinfo/SiteName link to understand each parameter and columns in the dataset.
-
+This iOS App is an online shopping app with Augmented Reality feature.
 
 # How it's written
-The dataset was collected using the Beautiful soup and selenium library with chrome web driver in order to crawl alexa.com data using python language.
-
-
-
-# Acknowledgements
-
-Provider:
-Ashkan Goharfar, ashkan_goharfar@aut.ac.ir,
-Department of Computer Engineering and Information Technology,
-Amirkabir University of Technology
-
-Dataset Source: https://www.kaggle.com/ashkangoharfar/sites-information-data-from-alexacom-dataset
-
-# Citation Request
-A. Risheh, A. Goharfar, and N. T. Javan, "Clustering Alexa Internet Data using Auto Encoder Network and Affinity Propagation," 2020 10th International Conference on Computer and Knowledge Engineering (ICCKE), Mashhad, Iran, 2020, pp. 437-443, doi: 10.1109/ICCKE50421.2020.9303705.
-Ashkan Goharfar
+The front-end was developed using SwuiftUI, ARKit, MessageUI, and FocusEntity. The User Authentication and Cloud Stroge was developed using Google Firebase.
 
 
 # Inspiration
 
-Possible uses for this dataset could include:
-
-Sentiment analysis in a variety of forms.
-Classifying websites based on their competitor websites, daily time visit of the website and Keyword opportunities.
-
-Analyzing what factors affect on Comparison metrics search traffic, Comparison metrics data, Audience overlap sites overlap scores, top keywords share of voice, top keywords search traffic, optimization opportunities organic share of voice, Optimization opportunities search popularity, Buyer keywords organic competition, Buyer keywords Avg traffic, Easy to rank keywords search pop, Easy to rank keywords relevance to site, Keyword gaps search popularity, Keyword gaps Avg traffic and Keywords search traffic.
-
-Training ML algorithms like RNNs to generate a probability for each site in each category to being SEO by Google.
-
-Use NLP for columns like keyword gaps name, Easy to rank keywords name, Buyer keywords name, optimization opportunities name, Top keywords name ,and Audience overlap similar sites to this site.
+We would be more than happy for any future collaboration towards adding new features and improving screens.
