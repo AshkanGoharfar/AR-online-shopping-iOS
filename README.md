@@ -1,8 +1,8 @@
 ## Readme
 
 # Table of contents
-- [App Demo](#App Demo)
-- [Running](#How to Run)
+- [App Demo](#App-Demo)
+- [How to Run](#How-to-Run)
 - [Context](#Context)
 - [Content](#Content)
 - [How it's written](#How-it's-written)
@@ -17,7 +17,60 @@ https://user-images.githubusercontent.com/25262431/166058501-12bc6d2a-96c2-4dc7-
 
 
 # How to Run
-To Crawl alexa.com:
+First make sure to install XCode version 13 or later and have iPhone X or later versions.
+
+Clone the repository:
+```bash
+git clone https://github.com/AshkanGoharfar/AR-online-shopping-iOS.git
+```
+
+Next, run the following command to create pod file.
+```bash
+pod init
+```
+
+
+Open the pod file by the following command to create pod file.
+```bash
+open podfile
+```
+
+Copy and paste the follwing text to the podfile
+
+
+```
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'AR-online-shopping-iOS' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for AR-online-shopping-iOS
+
+  target 'AR-online-shopping-iOSTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'AR-online-shopping-iOSUITests' do
+    # Pods for testing
+  end
+
+  pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Firestore'
+  pod 'Firebase/Storage'
+  pod 'SDWebImageSwiftUI'
+
+end
+```
+
+Finally, run the following command to install the dependencies to the podfile.
+```bash
+pod install
+```
+
 
 Write input and output file name and then write number of generation that you need
 
