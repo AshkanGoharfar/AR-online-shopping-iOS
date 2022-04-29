@@ -6,8 +6,6 @@
 - [Context](#Context)
 - [Content](#Content)
 - [How it's written](#How-it's-written)
-- [Acknowledgements](#Acknowledgements)
-- [Citation Request](#Citation-Request)
 - [Inspiration](#Inspiration)
 
 
