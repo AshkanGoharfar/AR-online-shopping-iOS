@@ -87,7 +87,7 @@ While those things aren’t technically possible in ecommerce, augmented reality
 This iOS App is an online shopping app with Augmented Reality feature.
 
 # How it's written
-The front-end was developed using SwuiftUI, ARKit, MessageUI, and FocusEntity. The User Authentication and Cloud Stroge was developed using Google Firebase.
+The front-end was developed using SwiftUI, ARKit, MessageUI, and FocusEntity. The User Authentication and Cloud Stroge was developed using Google Firebase.
 
 
 # Inspiration
