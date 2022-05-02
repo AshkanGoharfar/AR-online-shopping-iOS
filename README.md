@@ -78,7 +78,7 @@ Finally, run the following command to install the dependencies to the podfile.
 pod install
 ```
 
-Connect your iphone to your Mac and run the code :)
+Connect your iphone to your MacBook and run the code :)
 
 # Context
 ### How Augmented Reality in Ecommerce Can Deliver a More Enticing Shopping Experience?
@@ -88,10 +88,10 @@ One of the biggest challenges of online shopping is that it doesn’t lend itsel
 While those things aren’t technically possible in ecommerce, augmented reality (AR) applications offer a way to give customers deeper and more complete information about your products — right from their own home.
 
 # Content
-This iOS App is an online shopping app with Augmented Reality feature.
+This code is impleneted and fully test on an iPhone XR with iOS 15.4 version.
 
 # How it's written
-The front-end was developed using SwiftUI, ARKit, MessageUI, and FocusEntity. The User Authentication and Cloud Stroge was developed using Google Firebase.
+The front-end was implemented using SwiftUI, ARKit, MessageUI, and FocusEntity. The User Authentication and Cloud Stroge was developed using Google Firebase.
 
 
 # Inspiration
