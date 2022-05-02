@@ -26,18 +26,18 @@ Clone the repository:
 git clone https://github.com/AshkanGoharfar/AR-online-shopping-iOS.git
 ```
 
-Next, go to the project directory.
+Go to the project directory.
 ```bash
 cd AR-online-shopping-iOS
 ```
 
-Next, run the following command to create podfile.
+Next, Run the following command to create podfile.
 ```bash
 pod init
 ```
 
 
-Open the podfile by the following command to add dependencies.
+Open the podfile by the following command to add the dependencies.
 ```bash
 open podfile
 ```
@@ -78,7 +78,7 @@ Finally, run the following command to install the dependencies to the podfile.
 pod install
 ```
 
-Connect your iphone to your MacBook and run the code :)
+Connect your iphone to your MacBook and run the code in Xcode :)
 
 # Context
 ### How Augmented Reality in Ecommerce Can Deliver a More Enticing Shopping Experience?
