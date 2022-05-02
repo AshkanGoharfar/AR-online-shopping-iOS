@@ -73,12 +73,11 @@ target 'AR-online-shopping-iOS' do
 end
 ```
 
-Finally, run the following command to install the dependencies to the podfile.
+Run the following command to install the dependencies to the podfile.
 ```bash
 pod install
 ```
-
-Connect your iphone to your MacBook and run the code in Xcode :)
+Finally, Open the AR-online-shopping-iOS.xcworkspace file in the Xcode. Connect your iphone to your MacBook and run the code :)
 
 # Context
 ### How Augmented Reality in Ecommerce Can Deliver a More Enticing Shopping Experience?
