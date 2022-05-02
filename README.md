@@ -31,13 +31,13 @@ Next, go to the project directory.
 cd AR-online-shopping-iOS
 ```
 
-Next, run the following command to create pod file.
+Next, run the following command to create podfile.
 ```bash
 pod init
 ```
 
 
-Open the pod file by the following command to add dependencies.
+Open the podfile by the following command to add dependencies.
 ```bash
 open podfile
 ```
