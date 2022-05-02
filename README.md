@@ -87,7 +87,7 @@ One of the biggest challenges of online shopping is that it doesn’t lend itsel
 While those things aren’t technically possible in ecommerce, augmented reality (AR) applications offer a way to give customers deeper and more complete information about your products — right from their own home.
 
 # Content
-This code is impleneted and fully test on an iPhone XR with iOS 15.4 version.
+This code is impleneted and fully tested on an iPhone XR with iOS 15.4 version.
 
 # How it's written
 The front-end was implemented using SwiftUI, ARKit, MessageUI, and FocusEntity. The User Authentication and Cloud Stroge was developed using Google Firebase.
