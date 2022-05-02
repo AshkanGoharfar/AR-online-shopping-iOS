@@ -1,4 +1,4 @@
-# Online Shopping iOS App with Augmented Reality (AR) feature
+# Smart Online Shopping iOS App with Augmented Reality (AR) feature
 
 # Table of contents
 - [App Demo](#App-Demo)
