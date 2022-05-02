@@ -11,7 +11,7 @@
 
 # App Demo
 
-https://user-images.githubusercontent.com/25262431/166058501-12bc6d2a-96c2-4dc7-bf2d-f1fe7932abb0.mp4
+![AR online shopping iOS demo](https://user-images.githubusercontent.com/25262431/166336720-4e040eb5-8965-4564-b709-524ed7c9a547.gif)
 
 
 # How to Run
