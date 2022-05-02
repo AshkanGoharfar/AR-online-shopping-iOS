@@ -81,7 +81,7 @@ pod install
 Connect your iphone to your Mac and run the code :)
 
 # Context
-## How Augmented Reality in Ecommerce Can Deliver a More Enticing Shopping Experience?
+### How Augmented Reality in Ecommerce Can Deliver a More Enticing Shopping Experience?
 
 One of the biggest challenges of online shopping is that it doesn’t lend itself well to a full sensory product experience. In a brick-and-mortar environment, you can try on clothes, touch fabrics, or see for yourself just how big a couch looks in a room. 
 
